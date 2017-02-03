@@ -325,4 +325,6 @@ public class Settings extends SettingsActivity {
 
     // OctaviLab Additoon
     public static class OctaviLabActivity extends SettingsActivity {}
+
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
