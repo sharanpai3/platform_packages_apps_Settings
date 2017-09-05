@@ -75,4 +75,11 @@
                 android:targetClass="@string/additional_system_update_menu"/>
     </Preference>
 
+    <!-- About Devs -->
+    <Preference
+        android:key="dev_info"
+        android:title="@string/octavi_about_info"
+        android:summary="@string/octavi_about_info_summary_title"
+        android:fragment="com.android.settings.custom.OctaviDevsInfoFragment" />
+
 </PreferenceScreen>
