@@ -75,4 +75,7 @@
     <string name="octavi_lab_dash_title">Octavi Lab</string>
     <string name="octavi_lab_summary">Customization Laboratory</string>
 
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+
 </resources>
