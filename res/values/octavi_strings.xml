@@ -21,4 +21,8 @@
     <!-- Octavi version -->
     <string name="octavi_version">Octavi version</string>
     <string name="octavi_version_default">Unknown</string>
+
+    <!-- Octavi maintainer -->
+    <string name="maintainer">Maintainer</string>
+
 </resources>
