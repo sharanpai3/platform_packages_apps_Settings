@@ -453,4 +453,7 @@
     <string name="volume_adjustment_category_title">Volume Adjustments</string>
     <string name="ringtone_category_title">Ringtone</string>
     <string name="vibrations_category_title">Vibrations and Silence</string>
+
+    <string name="wifi_tether_client_list_title">Client List</string>
+    <string name="wifi_tether_client_list_summary">Manage clients connected to hotspot</string>
 </resources>
