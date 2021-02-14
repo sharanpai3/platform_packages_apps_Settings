@@ -45,4 +45,7 @@
         <attr name="mwhWaves"/>
         <attr name="mwhShape"/>
     </declare-styleable>
+
+    <attr name="customPreferenceStyle" format="reference" />
+
 </resources>
