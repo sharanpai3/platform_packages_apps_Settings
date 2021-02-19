@@ -33,6 +33,7 @@ import com.android.settings.SubSettings;
 import com.android.settings.dashboard.CategoryManager;
 import com.android.settingslib.drawer.Tile;
 
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import java.util.ArrayList;
@@ -80,6 +81,7 @@ public class SettingsBaseActivity extends FragmentActivity {
         final Toolbar toolbar = findViewById(R.id.action_bar);
         if (theme.getBoolean(android.R.styleable.Theme_windowNoTitle, false)  && getActionBar() != null) {
             toolbar.setVisibility(View.GONE);
+            ((AppBarLayout) findViewById(R.id.baseAppBar)).setExpanded(false);
             return;
         }
 	if (getActionBar() == null) setActionBar(toolbar);
