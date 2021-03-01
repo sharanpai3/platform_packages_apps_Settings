@@ -1,0 +1,3 @@
+files:
+  - source: /res/values/oc
+    translation: /res/values/octavi_strings_%language%.xml
