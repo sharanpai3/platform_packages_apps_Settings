@@ -25,6 +25,10 @@ import android.icu.text.NumberFormat;
 import android.os.BatteryManager;
 import android.os.PowerManager;
 import android.text.TextUtils;
+import android.text.method.LinkMovementMethod;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.VisibleForTesting;
@@ -35,7 +39,9 @@ import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.overlay.FeatureFactory;
+import com.android.settings.utils.AnnotationSpan;
 import com.android.settings.widget.EntityHeaderController;
+import com.android.settingslib.HelpUtils;
 import com.android.settingslib.Utils;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
@@ -49,6 +55,7 @@ public class BatteryHeaderPreferenceController extends BasePreferenceController
         implements PreferenceControllerMixin, LifecycleObserver, OnStart {
     @VisibleForTesting
     static final String KEY_BATTERY_HEADER = "battery_header";
+    private static final String ANNOTATION_URL = "url";
 
     @VisibleForTesting
     BatteryStatusFeatureProvider mBatteryStatusFeatureProvider;
@@ -113,7 +120,9 @@ public class BatteryHeaderPreferenceController extends BasePreferenceController
     public void updateHeaderPreference(BatteryInfo info) {
         mBatteryPercentText.setText(formatBatteryPercentageText(info.batteryLevel));
         if (!mBatteryStatusFeatureProvider.triggerBatteryStatusUpdate(this, info)) {
-            if (info.remainingLabel == null) {
+            if (BatteryUtils.isBatteryDefenderOn(info)) {
+                mSummary1.setText(null);
+            } else if (info.remainingLabel == null) {
                 mSummary1.setText(info.statusLabel);
             } else {
                 mSummary1.setText(info.remainingLabel);
