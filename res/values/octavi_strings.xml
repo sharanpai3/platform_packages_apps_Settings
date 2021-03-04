@@ -445,4 +445,19 @@
     <string name="legacy_wfd_video_mode_1080p_30fps">1080p 30fps</string>
     <string name="legacy_wfd_video_mode_1080p_60fps">1080p 60fps</string>
 
+    <!-- MIUI Like Headers -->
+    <string name="top_about_title">About phone</string>
+    <string name="top_accounts_title">Accounts</string>
+    <string name="top_apps_title">Apps and Notifications</string>
+    <string name="top_battery_title">Battery</string>
+    <string name="top_connected_title">Connected Devices</string>
+    <string name="top_display_title">Display</string>
+    <string name="top_privacy_title">Privacy</string>
+    <string name="top_security_title">Biometrics and security</string>
+    <string name="top_sound_title">Sounds and vibration</string>
+    <string name="top_storage_title">Storage</string>
+    <string name="top_system_title">System</string>
+    <string name="top_accessibility_title">Accessibility</string>
+    <string name="top_network_title">Network and Internet</string>
+
 </resources>
