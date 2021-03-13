@@ -21,91 +21,45 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- OctaviOS Logo -->
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="octavi_header_about"
-        android:layout="@layout/octavi_header_about"
-        android:selectable="false"/>
+    <com.android.settings.OosAboutPreference/>
 
-    <!-- ROM Version -->
-    <Preference
-        android:key="modversion"
-        android:title="@string/octavi_stage_title"
-        android:summary="@string/device_info_default"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.OctaviStagePreferenceController"/>
-
-    <!-- Device Model-->
-    <Preference
-        android:key="octavi_device_model"
-        android:title="@string/octavi_device_model"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.OctaviModelPreferenceController"/>
-
-    <!-- Phone Specs -->
-    <Preference
-        android:key="phone_specs"
-        android:title="@string/specs_title"
+    <!-- Device name -->
+    <com.android.settings.widget.ValidatedEditTextPreference
+        android:key="device_name"
+        android:icon="@drawable/ic_about_phone"
+        android:layout="@layout/about_preference"
+        android:title="Device nickname"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SpecsPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
+        settings:enableCopying="true"/>
 
-    <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
+        android:icon="@drawable/ic_about_android"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:searchable="false"
+        android:layout="@layout/about_preference_tinted"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
-
-    <!-- Octavi build type -->
-    <Preference
-        android:key="build_type"
-        android:title="@string/build_type"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.OctaviBuildTypePreferenceController"/>
 
     <!-- Security patch -->
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
+        android:icon="@drawable/ic_about_secure"
         settings:enableCopying="true"
+        android:layout="@layout/about_preference"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
-
-    <!-- Mainline module version -->
-    <Preference
-        android:key="module_version"
-        android:title="@string/module_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
-
-    <!-- Baseband
-    <Preference
-        android:key="base_band"
-        android:title="@string/baseband_version"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/> -->
 
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
-        android:title="@string/kernel_version"
+        android:title="Kernel version"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/about_preference"
+        settings:enableCopying="false"
+        android:icon="@drawable/ic_about_build" 
         android:selectable="false"
-        settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
-
-    <!-- Build
-    <Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/> -->
-
 </PreferenceScreen>

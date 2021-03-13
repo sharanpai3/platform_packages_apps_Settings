@@ -1,17 +1,33 @@
 package com.android.settings;
 
 import android.content.Context;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.StatFs;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
+import java.io.File;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Scanner;
+
 public class OosAboutPreference extends Preference {
 
     Context context;
+    StatFs statFs;
 
     public OosAboutPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -19,7 +35,7 @@ public class OosAboutPreference extends Preference {
         setLayoutResource(R.layout.oos_about);
     }
 
-    public static String getSystemProperty(String key) {
+    public  String getSystemProperty(String key) {
         String value = null;
 
         try {
@@ -32,7 +48,7 @@ public class OosAboutPreference extends Preference {
         return value;
     }
 
-    private static void setInfo(String prop, TextView textview) {
+    private  void setInfo(String prop, TextView textview) {
         if (TextUtils.isEmpty(getSystemProperty(prop))) {
             textview.setText("Unknown");
 	} else {
@@ -46,12 +62,113 @@ public class OosAboutPreference extends Preference {
         }
     }
 
-    private static void setInfo(String prop, String prop2, TextView textview) {
+    private  void setInfo(String prop, String prop2, TextView textview) {
         if (TextUtils.isEmpty(getSystemProperty(prop)) && TextUtils.isEmpty(getSystemProperty(prop2))) {
             textview.setText("Unknown");
 	} else {
             textview.setText(String.format("v%s %s", getSystemProperty(prop), getSystemProperty(prop2)));
         }
+    }
+
+    private  Map<String, String> getMemInfoMap() {
+        Map<String, String> map = new HashMap<>();
+        try {
+            Scanner s = new Scanner(new File("/proc/meminfo"));
+            while (s.hasNextLine()) {
+                String[] vals = s.nextLine().split(": ");
+                if (vals.length > 1)
+                    map.put(vals[0].trim(), vals[1].trim());
+            }
+        } catch (Exception e) {
+            Log.e("getMemInfoMap", Log.getStackTraceString(e));
+        }
+        return map;
+    }
+
+    private  Map<String, String> getCpuInfoMap() {
+        Map<String, String> map = new HashMap<>();
+        try {
+            Scanner s = new Scanner(new File("/proc/cpuinfo"));
+            while (s.hasNextLine()) {
+                String[] vals = s.nextLine().split(": ");
+                if (vals.length > 1)
+                    map.put(vals[0].trim(), vals[1].trim());
+            }
+        } catch (Exception e) {
+            Log.e("getCpuInfoMap", Log.getStackTraceString(e));
+        }
+        return map;
+    }
+
+    private String getHwName(String soc) {
+
+        Map<String, String> map = new HashMap<>();
+        map.put("msm8952", "617");
+        map.put("msm8953", "625");
+        map.put("msm8953 pro", "626");
+        map.put("msm8956", "650");
+        map.put("msm8976", "652");
+        map.put("msm8956 pro", "653");
+        map.put("sm6125", "665");
+        map.put("sm6150", "675");
+        map.put("sm6350", "690");
+        map.put("msm8992", "808");
+        map.put("msm8994", "810");
+        map.put("msm8996", "820");
+        map.put("msm8998", "835");
+        map.put("sm8150", "855");
+        map.put("sm8150-AC", "855+");
+        map.put("sm8250", "865");
+        map.put("sm8250-AC", "865+");
+
+        if (map.containsKey(soc)) {
+            for (String key : map.keySet()) {
+                if (key.equals(soc))
+                    return map.get(soc);
+            }
+        } else if (soc.startsWith("sdm"))
+            return soc.substring(3);
+        return "Unknown";
+    }
+    private String getCpuName() {
+        int cores;
+        String string = "";
+        if (getCpuInfoMap().containsKey("Hardware"))
+            if (getCpuInfoMap().containsKey("processor")) {
+                cores = Integer.parseInt(getCpuInfoMap().get("processor")) + 1;
+                switch (cores) {
+                    case 2:
+                        string = "Dual Core";
+                        break;
+                    case 4:
+                        string = "Quad Core";
+                        break;
+                    case 8:
+                        string = "Octa Core";
+                        break;
+                    case 10:
+                        string = "Deca Core";
+                        break;
+                    default:
+                        string = string + cores;
+                        break;
+                }
+                return String.format(Locale.ENGLISH, "Qualcomm Snapdragon%s %s\n%s processor", context.getString(R.string.trademark), getHwName(getSystemProperty("ro.board.platform").toLowerCase()), string);
+            } else
+                return getCpuInfoMap().get("Hardware");
+        else {
+            if (getCpuInfoMap().containsKey("model name"))
+                return getCpuInfoMap().get("model name");
+        }
+        return "Unknown";
+    }
+
+    private String getMem() {
+        if (getMemInfoMap().containsKey("MemTotal")) {
+            String s = getMemInfoMap().get("MemTotal");
+            return s.split(" ")[0];
+        }
+        return "Unknown";
     }
 
     @Override
@@ -60,17 +177,40 @@ public class OosAboutPreference extends Preference {
 
         final boolean selectable = false;
 
+	statFs = new StatFs(Environment.getDataDirectory().getAbsolutePath());
+
         holder.itemView.setFocusable(selectable);
         holder.itemView.setClickable(selectable);
 
         ImageView deviceIcon = holder.itemView.findViewById(R.id.device_icon);
-        TextView deviceName = holder.itemView.findViewById(R.id.device_model_name);
+        TextView deviceProc = holder.itemView.findViewById(R.id.device_procc_model);
         TextView octStage = holder.itemView.findViewById(R.id.octavi_stage);
         TextView octMaintainer = holder.itemView.findViewById(R.id.octavi_maintainer);
+        TextView deviceStorage = holder.itemView.findViewById(R.id.device_storage);
 
-        setInfo("ro.product.model", deviceName);
+        LinearLayout details = holder.itemView.findViewById(R.id.details);
+
         setInfo("ro.octavi.status", "ro.octavi.branding.version", octStage);
         setInfo("ro.octavi.maintainer", octMaintainer);
+
+	int total = 0;
+	double totalInt = (statFs.getBlockSizeLong() * statFs.getBlockCountLong() / Math.pow(1024, 3));
+        deviceProc.setText(String.format(Locale.ENGLISH, "%s", getCpuName()));
+        if (totalInt > 0 && totalInt < 17)
+            total = 16;
+        else if (totalInt > 16 && totalInt < 33)
+            total = 32;
+        else if (totalInt > 32 && totalInt < 65)
+            total = 64;
+        else if (totalInt > 64 && totalInt < 129)
+            total = 128;
+        else if (totalInt > 128 && totalInt < 257)
+            total = 256;
+        else if (totalInt > 256 && totalInt < 513)
+            total = 512;
+
+        deviceStorage.setText(String.format(Locale.ENGLISH, "%dGB RAM + %dGB ROM", Math.round(Float.parseFloat(getMem()) / Math.pow(1000, 2)), total));
+        deviceProc.setText(String.format(Locale.ENGLISH, "%s", getCpuName()));
 
         switch (getSystemProperty("ro.product.device").toLowerCase()) {
             case "x00td":
@@ -145,4 +285,3 @@ public class OosAboutPreference extends Preference {
         holder.setDividerAllowedBelow(false);
     }
 }
-

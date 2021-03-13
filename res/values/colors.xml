@@ -178,6 +178,7 @@
     <color name="card_view_bg">@color/about_card_view_bg</color>
     <color name="black">#171717</color>
     <color name="off_black">#90171717</color>
+    <color name="grey">#99FFFFFF</color>
     <color name="white">#fff</color>
 
     <color name="settings_new_about">#8950cc</color>

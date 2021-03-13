@@ -252,4 +252,5 @@
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
 
+    <string name="trademark">&#8482;</string>
 </resources>
