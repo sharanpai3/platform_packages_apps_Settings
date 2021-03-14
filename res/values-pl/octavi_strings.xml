@@ -14,13 +14,13 @@
     <!-- Octavi Stage in About phone -->
     <string name="octavi_stage_title">OctaviOS Stage</string>
     <!-- Build types, now with translations -->
-    <string name="build_type">Rodzaj kompilacji</string>
-    <string name="octavi_official">Oficjalna</string>
-    <string name="octavi_unofficial">Nieoficjalna</string>
+    <string name="build_type">Build Type</string>
+    <string name="octavi_official">Official</string>
+    <string name="octavi_unofficial">Unofficial</string>
     <!-- Device Model -->
-    <string name="octavi_device_model">Model Urządzenia</string>
+    <string name="octavi_device_model">Device Model</string>
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Znajdź czytnik linii papilarnych z przodu twojego telefonu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Locate the fingerprint sensor on the left side of your phone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Locate the fingerprint sensor on the right side of your phone.</string>
     <!-- Fingerprint location message - generic -->
@@ -32,42 +32,42 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Zresetuj statystyki</string>
-    <string name="battery_stats_message">Statystyki historii baterii zostaną zresetowane</string>
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
     <!-- Phone Specs -->
-    <string name="specs_title">Specyfikacje telefonu</string>
+    <string name="specs_title">Phone Specifications</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Octavi Lab -->
     <string name="octavi_lab_dash_title">Octavi Lab</string>
-    <string name="octavi_lab_summary">Laboratorium Personalizacji</string>
+    <string name="octavi_lab_summary">Customization Laboratory</string>
     <!-- Battery temp -->
-    <string name="battery_temp_title">Temperatura baterii</string>
+    <string name="battery_temp_title">Battery temperature</string>
     <!-- Charging vibration -->
     <string name="charging_sounds_nos_title">Charging sound</string>
-    <string name="charging_vibro_title">Wibracje przy rozpoczęciu ładowania</string>
+    <string name="charging_vibro_title">Charging vibration</string>
     <!-- Screenshot sound -->
-    <string name="screenshot_sound_title">Dźwięk zrzutu ekranu</string>
+    <string name="screenshot_sound_title">Screenshot sound</string>
     <!-- Clock style -->
     <string name="clock_style_title">Clock style</string>
-    <string name="clock_style_summary">Dostosuj zegar na ekranie blokady</string>
+    <string name="clock_style_summary">Customize lockscreen clock</string>
     <!-- Battery health -->
-    <string name="battery_health_title">Stan baterii</string>
-    <string name="battery_health_summary">Monitoruj stan baterii urządzenia</string>
-    <string name="current_battery_capacity">Obecna pojemność baterii</string>
-    <string name="current_battery_capacity_summary">Bieżąca pojemność baterii mierzona przez kernel</string>
+    <string name="battery_health_title">Battery health</string>
+    <string name="battery_health_summary">Monitor the battery health of your device</string>
+    <string name="current_battery_capacity">Current battery capacity</string>
+    <string name="current_battery_capacity_summary">The current battery capacity measured by the kernel</string>
     <string name="designed_battery_capacity">Designed battery capacity</string>
-    <string name="designed_battery_capacity_summary">Pojemność akumulatora zaprojektowana przez producenta</string>
+    <string name="designed_battery_capacity_summary">The battery capacity designed by the manufacturer</string>
     <string name="battery_charge_cycles">Charge Cycles Completed</string>
     <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">Aplikacje pełnoekranowe</string>
-    <string name="display_cutout_force_fullscreen_summary">Wymuś na aplikacjach ignorowanie notch\'a</string>
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
     <!-- Advanced powermenu -->
     <string name="global_actions_title">Power menu</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Kolor światła</string>
+    <string name="custom_light_title">Light color</string>
     <string name="custom_light_on_time_title">Light ON time during led pulse (ms)</string>
     <string name="custom_light_off_time_title">Light OFF time during led pulse (ms)\"</string>
     <string name="value_equals_default">def</string>
@@ -75,10 +75,10 @@
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
     <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Szybkie odblokowywanie</string>
-    <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie, gdy wprowadzony zostanie poprawny PIN/hasło</string>
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
     <!-- Misc gesture settings -->
-    <string name="back_gesture_haptic_title">Wibracje haptyczne</string>
+    <string name="back_gesture_haptic_title">Haptic feedback</string>
     <string name="back_gesture_haptic_summary">Enable haptic tick effect on back gesture</string>
     <string name="weather_title">Weather</string>
     <!-- Navbar length -->
@@ -86,7 +86,7 @@
     <string name="hidden_label">Hidden</string>
     <string name="long_label">Long</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <string name="connected_tws_device_saved_title">Zapisane słuchawki</string>
+    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
     <!-- Lock screen pattern size -->
