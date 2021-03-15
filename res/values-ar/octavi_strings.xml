@@ -12,42 +12,42 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Octavi Stage in About phone -->
-    <string name="octavi_stage_title">OctaviOS Stage</string>
+    <string name="octavi_stage_title">طور نظام تشغيل أوكتاڤي</string>
     <!-- Build types, now with translations -->
-    <string name="build_type">Build Type</string>
-    <string name="octavi_official">Official</string>
-    <string name="octavi_unofficial">Unofficial</string>
+    <string name="build_type">نوع النسخة</string>
+    <string name="octavi_official">رسمي</string>
+    <string name="octavi_unofficial">غير رسمي</string>
     <!-- Device Model -->
-    <string name="octavi_device_model">Device Model</string>
+    <string name="octavi_device_model">طراز الجهاز</string>
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Locate the fingerprint sensor on the left side of your phone.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Locate the fingerprint sensor on the right side of your phone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">حدد موقع حساس البصمة في مقدمة هاتفك.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">حدد موقع حساس البصمة في مؤخرة جهازك.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">حدد موقع حساس البصمة على يمين جهازك.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Locate the fingerprint sensor on the right side of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">حدد موقع حساس البصمة في مقدمة جهازك.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">حدد موقع حساس البصمة على يسار جهازك.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">حدد موقع حساس البصمة على يمين جهازك.</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">حدد موقع حساس البصمة في مقدمة جهازك اللوحي.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">حدد موقع حساس البصمة على يسار جهازك اللوحي.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">حدد موقع حساس البصمة على يمين جهازك اللوحي.</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Reset stats</string>
-    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="battery_stats_reset">إعادة تعيين الإحصائيات</string>
+    <string name="battery_stats_message">سيتم محو تاريخ إحصائيات البطارية</string>
     <!-- Phone Specs -->
-    <string name="specs_title">Phone Specifications</string>
+    <string name="specs_title">مواصفات الهاتف</string>
     <!-- App details: open play store link if app is user installed -->
-    <string name="app_play_store">Google Play</string>
+    <string name="app_play_store">متجر Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Octavi Lab -->
     <string name="octavi_lab_dash_title">Octavi Lab</string>
-    <string name="octavi_lab_summary">Customization Laboratory</string>
+    <string name="octavi_lab_summary">مختبر التعديلات</string>
     <!-- Battery temp -->
-    <string name="battery_temp_title">Battery temperature</string>
+    <string name="battery_temp_title">حرارة البطارية</string>
     <!-- Charging vibration -->
-    <string name="charging_sounds_nos_title">Charging sound</string>
-    <string name="charging_vibro_title">Charging vibration</string>
+    <string name="charging_sounds_nos_title">صوت وصل الشحن</string>
+    <string name="charging_vibro_title">الإهتزاز عند وصل الشحن</string>
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
     <!-- Clock style -->
