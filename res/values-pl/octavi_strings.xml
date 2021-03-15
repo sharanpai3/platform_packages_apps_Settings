@@ -65,7 +65,7 @@
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
     <!-- Advanced powermenu -->
-    <string name="global_actions_title">Power menu</string>
+    <string name="global_actions_title">Menu zasilania</string>
     <!-- Custom light color -->
     <string name="custom_light_title">Light color</string>
     <string name="custom_light_on_time_title">Light ON time during led pulse (ms)</string>
@@ -73,7 +73,7 @@
     <string name="value_equals_default">def</string>
     <!-- Scramble pin -->
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_summary">Pomieszaj układ cyfr przy wpisywaniu kodu PIN</string>
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
@@ -131,7 +131,7 @@
     <!-- Back Gestures -->
     <string name="smallest_tick_label">Off</string>
     <string name="greatest_tick_label">Half screen</string>
-    <string name="gesture_back_deadzone_label">Dead zone</string>
+    <string name="gesture_back_deadzone_label">Martwa strefa</string>
     <string name="back_sensitivity_dialog_message_cust">\nUse the first and second seekbar to configure back swipe sensitivity, the last seekbar to set a dead area on top of the screen where the swipe cannot be triggered, to avoid conflicts with in-app gestures.</string>
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Back gesture animation</string>
