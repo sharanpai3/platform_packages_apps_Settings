@@ -51,7 +51,7 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
     <!-- Clock style -->
-    <string name="clock_style_title">Clock style</string>
+    <string name="clock_style_title">Estilo do relógio</string>
     <string name="clock_style_summary">Customize lockscreen clock</string>
     <!-- Battery health -->
     <string name="battery_health_title">Battery health</string>
@@ -65,7 +65,7 @@
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
     <!-- Advanced powermenu -->
-    <string name="global_actions_title">Power menu</string>
+    <string name="global_actions_title">Menu liga/desliga</string>
     <!-- Custom light color -->
     <string name="custom_light_title">Light color</string>
     <string name="custom_light_on_time_title">Light ON time during led pulse (ms)</string>
@@ -80,7 +80,7 @@
     <!-- Misc gesture settings -->
     <string name="back_gesture_haptic_title">Haptic feedback</string>
     <string name="back_gesture_haptic_summary">Enable haptic tick effect on back gesture</string>
-    <string name="weather_title">Weather</string>
+    <string name="weather_title">Clima</string>
     <!-- Navbar length -->
     <string name="navbar_length">Gesture bar length</string>
     <string name="hidden_label">Hidden</string>
@@ -118,9 +118,9 @@
     <string name="adaptive_playback_timeout_1_min_summary">On (1 minute)</string>
     <string name="adaptive_playback_timeout_2_min">2 minutes</string>
     <string name="adaptive_playback_timeout_2_min_summary">On (2 minutes)</string>
-    <string name="adaptive_playback_timeout_5_min">5 minutes</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutos</string>
     <string name="adaptive_playback_timeout_5_min_summary">On (5 minutes)</string>
-    <string name="adaptive_playback_timeout_10_min">10 minutes</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutos</string>
     <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
     <string name="adaptive_playback_explainer">Adaptive playback automatically pauses media when the volume is muted and will resume automatically when volume is restored within the set time.</string>
     <!-- Back gesture height -->
