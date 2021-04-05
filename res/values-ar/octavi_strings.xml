@@ -95,15 +95,6 @@
     <string name="lockpattern_settings_enable_error_path_title">إظهار الخطأ بالنمط</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">إظهار نقاط النمط</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">السماح بالوصول للشبكة</string>
-    <string name="data_usage_app_restrict_all_summary">تفعيل إستخدام الشبكة</string>
-    <string name="data_usage_app_restrict_mobile">بيانات الهاتف</string>
-    <string name="data_usage_app_restrict_mobile_summary">تفعيل استخدام بيانات الهاتف</string>
-    <string name="data_usage_app_restrict_vpn">بيانات الـVPN</string>
-    <string name="data_usage_app_restrict_vpn_summary">تفعيل إستخدام بيانات الVPN</string>
-    <string name="data_usage_app_restrict_wifi">بيانات ال واي\u2011فاي</string>
-    <string name="data_usage_app_restrict_wifi_summary">تفعيل إستخدام بيانات الواي\u2011فاي</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">الإشعارات، سجل الإشعارات</string>
     <!-- Adaptive Playback -->
@@ -197,4 +188,36 @@
     <string name="incall_vibrate_call_wait_title">الإهتزاز عند إنتظار المكالمة</string>
     <string name="incall_vibrate_disconnect_title">الإهتزاز عند قطع الإتصال</string>
     <string name="trademark">&#8482;</string>
+    <!-- App Lock -->
+    <string name="applock_title">App locker</string>
+    <string name="applock_locked">Locked</string>
+    <string name="applock_unlocked">Unlocked</string>
+    <string name="applock_locked_apps">Locked apps</string>
+    <string name="applock_unlocked_apps">Unlocked apps</string>
+    <string name="applock_show_only_on_wake">Authenticate only once</string>
+    <string name="applock_show_only_on_wake_on_summary">Once authenticated, an app stays unlocked until the screen turns off</string>
+    <string name="applock_show_only_on_wake_off_summary">Once authenticated, an app stays unlocked for 15 seconds after exiting</string>
+    <string name="applock_notification_info">You can show/hide the notification content on a per-app basis by clicking on the notification icon shown on each locked apps\' preference</string>
+    <string name="applock_show_notif">Showing notification content</string>
+    <string name="applock_hide_notif">Hiding notification content</string>
+    <string name="applock_setup">Setup app locker</string>
+    <string name="applock_overlay_summary">This feature is not available because this app is locked</string>
+    <plurals name="applock_summary">
+        <item quantity="zero">%d apps locked</item>
+        <item quantity="one">1 app locked</item>
+        <item quantity="two">%d apps locked</item>
+        <item quantity="few">%d apps locked</item>
+        <item quantity="many">%d apps locked</item>
+        <item quantity="other">%d apps locked</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">السماح بالوصول للشبكة</string>
+    <string name="data_usage_app_restrict_all_summary">تفعيل إستخدام الشبكة</string>
+    <string name="data_usage_app_restrict_mobile">بيانات الهاتف</string>
+    <string name="data_usage_app_restrict_mobile_summary">تفعيل استخدام بيانات الهاتف</string>
+    <string name="data_usage_app_restrict_vpn">بيانات الـVPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">تفعيل إستخدام بيانات الVPN</string>
+    <string name="data_usage_app_restrict_wifi">بيانات ال واي\u2011فاي</string>
+    <string name="data_usage_app_restrict_wifi_summary">تفعيل إستخدام بيانات الواي\u2011فاي</string>
 </resources>
