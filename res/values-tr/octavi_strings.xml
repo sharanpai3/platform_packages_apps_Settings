@@ -95,15 +95,6 @@
     <string name="lockpattern_settings_enable_error_path_title">Desen hatasını göster</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Desen noktalarını göster</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">Ağ erişimine izin ver</string>
-    <string name="data_usage_app_restrict_all_summary">Ağ kullanımını etkinleştir</string>
-    <string name="data_usage_app_restrict_mobile">Mobil veri</string>
-    <string name="data_usage_app_restrict_mobile_summary">Mobil veri kullanımını etkinleştir</string>
-    <string name="data_usage_app_restrict_vpn">VPN verisi</string>
-    <string name="data_usage_app_restrict_vpn_summary">VPN veri kullanımını etkinleştir</string>
-    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi verisi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi veri kullanımını etkinleştir</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">bildirimler, bildirim günlüğü</string>
     <!-- Adaptive Playback -->
@@ -197,4 +188,32 @@
     <string name="incall_vibrate_call_wait_title">Çağrı bekletildiğinde titret</string>
     <string name="incall_vibrate_disconnect_title">Arama bağlantısı kesildiğinde titret</string>
     <string name="trademark">&#8482;</string>
+    <!-- App Lock -->
+    <string name="applock_title">App locker</string>
+    <string name="applock_locked">Locked</string>
+    <string name="applock_unlocked">Unlocked</string>
+    <string name="applock_locked_apps">Locked apps</string>
+    <string name="applock_unlocked_apps">Unlocked apps</string>
+    <string name="applock_show_only_on_wake">Authenticate only once</string>
+    <string name="applock_show_only_on_wake_on_summary">Once authenticated, an app stays unlocked until the screen turns off</string>
+    <string name="applock_show_only_on_wake_off_summary">Once authenticated, an app stays unlocked for 15 seconds after exiting</string>
+    <string name="applock_notification_info">You can show/hide the notification content on a per-app basis by clicking on the notification icon shown on each locked apps\' preference</string>
+    <string name="applock_show_notif">Showing notification content</string>
+    <string name="applock_hide_notif">Hiding notification content</string>
+    <string name="applock_setup">Setup app locker</string>
+    <string name="applock_overlay_summary">This feature is not available because this app is locked</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 app locked</item>
+        <item quantity="other">%d apps locked</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Ağ erişimine izin ver</string>
+    <string name="data_usage_app_restrict_all_summary">Ağ kullanımını etkinleştir</string>
+    <string name="data_usage_app_restrict_mobile">Mobil veri</string>
+    <string name="data_usage_app_restrict_mobile_summary">Mobil veri kullanımını etkinleştir</string>
+    <string name="data_usage_app_restrict_vpn">VPN verisi</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN veri kullanımını etkinleştir</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi verisi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi veri kullanımını etkinleştir</string>
 </resources>
