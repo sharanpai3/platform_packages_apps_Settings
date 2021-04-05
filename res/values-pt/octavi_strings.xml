@@ -95,15 +95,6 @@
     <string name="lockpattern_settings_enable_error_path_title">Mostrar erro no padrão</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Mostrar os pontos do padrão</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">Permitir acesso à rede</string>
-    <string name="data_usage_app_restrict_all_summary">Permitir que as aplicações se liguem à rede</string>
-    <string name="data_usage_app_restrict_mobile">Dados móveis</string>
-    <string name="data_usage_app_restrict_mobile_summary">Permitir o uso de dados móveis</string>
-    <string name="data_usage_app_restrict_vpn">Dados VPN</string>
-    <string name="data_usage_app_restrict_vpn_summary">Ativar a utilização de dados VPN</string>
-    <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Ativar o uso de dados Wi\u2011Fi</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">notificações, registo de notificações</string>
     <!-- Adaptive Playback -->
@@ -197,4 +188,32 @@
     <string name="incall_vibrate_call_wait_title">Vibrar com chamada em espera</string>
     <string name="incall_vibrate_disconnect_title">Vibrar ao desligar</string>
     <string name="trademark">&#8482;</string>
+    <!-- App Lock -->
+    <string name="applock_title">App locker</string>
+    <string name="applock_locked">Locked</string>
+    <string name="applock_unlocked">Unlocked</string>
+    <string name="applock_locked_apps">Locked apps</string>
+    <string name="applock_unlocked_apps">Unlocked apps</string>
+    <string name="applock_show_only_on_wake">Authenticate only once</string>
+    <string name="applock_show_only_on_wake_on_summary">Once authenticated, an app stays unlocked until the screen turns off</string>
+    <string name="applock_show_only_on_wake_off_summary">Once authenticated, an app stays unlocked for 15 seconds after exiting</string>
+    <string name="applock_notification_info">You can show/hide the notification content on a per-app basis by clicking on the notification icon shown on each locked apps\' preference</string>
+    <string name="applock_show_notif">Showing notification content</string>
+    <string name="applock_hide_notif">Hiding notification content</string>
+    <string name="applock_setup">Setup app locker</string>
+    <string name="applock_overlay_summary">This feature is not available because this app is locked</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 app locked</item>
+        <item quantity="other">%d apps locked</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permitir acesso à rede</string>
+    <string name="data_usage_app_restrict_all_summary">Permitir que as aplicações se liguem à rede</string>
+    <string name="data_usage_app_restrict_mobile">Dados móveis</string>
+    <string name="data_usage_app_restrict_mobile_summary">Permitir o uso de dados móveis</string>
+    <string name="data_usage_app_restrict_vpn">Dados VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Ativar a utilização de dados VPN</string>
+    <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Ativar o uso de dados Wi\u2011Fi</string>
 </resources>
