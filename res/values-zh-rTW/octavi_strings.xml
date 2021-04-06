@@ -189,9 +189,6 @@
     <string name="navbar_radius">手勢欄範圍大小</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
-    <!-- Swipe up for face unlock -->
-    <string name="security_settings_face_require_swipe">向上滑動即可解鎖</string>
-    <string name="security_settings_face_require_swipe_summary">向上滑動鎖定螢幕以使用臉部辨識解鎖</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">接通時震動</string>
     <string name="incall_vibrate_call_wait_title">等待接聽電話時震動</string>
@@ -215,4 +212,5 @@
         <item quantity="other">%d 個應用程式已被鎖定</item>
     </plurals>
     <string name="keywords_applock_settings">應用程式鎖定, 應用程式鎖定, 應用程式鎖定, 應用程式鎖定</string>
+    <!-- Face Unlock -->
 </resources>
