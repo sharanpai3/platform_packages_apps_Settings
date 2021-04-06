@@ -213,4 +213,9 @@
     </plurals>
     <string name="keywords_applock_settings">kunci aplikasi, pengunci aplikasi, loker aplikasi</string>
     <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Hapus pemindaian wajah yang ada dan buat pemindaian baru</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Ulangi pemindaian wajah</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Layar kunci, sidik jari, buka kunci dengan wajah</string>
+    <string name="face_redo_confirm_btn">Ulangi</string>
+    <string name="face_redo_warning_msg">Apakah Anda ingin menghapus pemindaian wajah yang ada dan membuat pemindaian baru?</string>
 </resources>
