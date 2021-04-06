@@ -41,7 +41,6 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Octavi Lab -->
-    <string name="octavi_lab_dash_title">Octavi Lab</string>
     <string name="octavi_lab_summary">مختبر التعديلات</string>
     <!-- Battery temp -->
     <string name="battery_temp_title">حرارة البطارية</string>
@@ -51,7 +50,6 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">صوت لقطة الشاشة</string>
     <!-- Clock style -->
-    <string name="clock_style_title">Clock style</string>
     <string name="clock_style_summary">تخصيص ساعة شاشة القفل</string>
     <!-- Battery health -->
     <string name="battery_health_title">صحة البطارية</string>
@@ -65,7 +63,6 @@
     <string name="display_cutout_force_fullscreen_title">تطبيقات تملأ الشاشة</string>
     <string name="display_cutout_force_fullscreen_summary">فرض التطبيقات على تجاهل مكان قطع الشاشة</string>
     <!-- Advanced powermenu -->
-    <string name="global_actions_title">Power menu</string>
     <!-- Custom light color -->
     <string name="custom_light_title">لون الضوء</string>
     <string name="custom_light_on_time_title">وقت تشغيل الضوء أثناء نبض الليد (مث)</string>
@@ -80,7 +77,6 @@
     <!-- Misc gesture settings -->
     <string name="back_gesture_haptic_title">الإستجابة الإهتزازية</string>
     <string name="back_gesture_haptic_summary">تفعيل الإهتزاز عند إيماء الرجوع</string>
-    <string name="weather_title">Weather</string>
     <!-- Navbar length -->
     <string name="navbar_length">طول شريط الإيماء</string>
     <string name="hidden_label">خفي</string>
@@ -118,9 +114,7 @@
     <string name="adaptive_playback_timeout_1_min_summary">مشغل (دقيقة)</string>
     <string name="adaptive_playback_timeout_2_min">دقيقتان</string>
     <string name="adaptive_playback_timeout_2_min_summary">مشغل (دقيقتان)</string>
-    <string name="adaptive_playback_timeout_5_min">5 minutes</string>
     <string name="adaptive_playback_timeout_5_min_summary">مشغل (5 دقائق)</string>
-    <string name="adaptive_playback_timeout_10_min">10 minutes</string>
     <string name="adaptive_playback_timeout_10_min_summary">مشغل (10 دقائق)</string>
     <string name="adaptive_playback_explainer">التشغيل التأقلمي سوف يوقف الوسائط تلقائياً عندما يُكتم الصوت و سوف يستأنف التشغيل عندما يعود الصوت ضمن الوقت المحدد.</string>
     <!-- Back gesture height -->
@@ -148,7 +142,6 @@
     <string name="volume_steps_ring_title">درجات الصوت: الرنين</string>
     <string name="volume_steps_system_title">درجات الصوت: النظام</string>
     <string name="volume_steps_voice_call_title">درجات الصوت: صوت المكالمة</string>
-    <string name="volume_steps_reset">Reset</string>
     <!-- Running services toggle -->
     <string name="background_processes_settings_title">العمليات الخلفية</string>
     <!-- Pocket judge -->
@@ -189,35 +182,11 @@
     <string name="navbar_radius">طول شريط الإيماء</string>
     <string name="small_label">1 منزلة عشرية</string>
     <string name="big_label">4 منزلة عشرية</string>
-    <!-- Swipe up for face unlock -->
-    <string name="security_settings_face_require_swipe">اسحب للأعلى لفتح القفل</string>
-    <string name="security_settings_face_require_swipe_summary">اسحب للأعلى بشاشة القفل لفك القفل بالوجه</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">الإهتزاز عند الإتصال</string>
     <string name="incall_vibrate_call_wait_title">الإهتزاز عند إنتظار المكالمة</string>
     <string name="incall_vibrate_disconnect_title">الإهتزاز عند قطع الإتصال</string>
     <string name="trademark">&#8482;</string>
     <!-- App Lock -->
-    <string name="applock_title">App locker</string>
-    <string name="applock_locked">Locked</string>
-    <string name="applock_unlocked">Unlocked</string>
-    <string name="applock_locked_apps">Locked apps</string>
-    <string name="applock_unlocked_apps">Unlocked apps</string>
-    <string name="applock_show_only_on_wake">Authenticate only once</string>
-    <string name="applock_show_only_on_wake_on_summary">Once authenticated, an app stays unlocked until the screen turns off</string>
-    <string name="applock_show_only_on_wake_off_summary">Once authenticated, an app stays unlocked for 15 seconds after exiting</string>
-    <string name="applock_notification_info">You can show/hide the notification content on a per-app basis by clicking on the notification icon shown on each locked apps\' preference</string>
-    <string name="applock_show_notif">Showing notification content</string>
-    <string name="applock_hide_notif">Hiding notification content</string>
-    <string name="applock_setup">Setup app locker</string>
-    <string name="applock_overlay_summary">This feature is not available because this app is locked</string>
-    <plurals name="applock_summary">
-        <item quantity="zero">%d apps locked</item>
-        <item quantity="one">1 app locked</item>
-        <item quantity="two">%d apps locked</item>
-        <item quantity="few">%d apps locked</item>
-        <item quantity="many">%d apps locked</item>
-        <item quantity="other">%d apps locked</item>
-    </plurals>
-    <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
+    <!-- Face Unlock -->
 </resources>
