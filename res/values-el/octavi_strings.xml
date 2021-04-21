@@ -195,5 +195,28 @@
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <string name="trademark">&#8482;</string>
     <!-- App Lock -->
+    <string name="applock_title">Κλείδωμα εφαρμογών</string>
+    <string name="applock_locked">Κλειδωμένο</string>
+    <string name="applock_unlocked">Ξεκλείδωτο</string>
+    <string name="applock_locked_apps">Κλειδωμένες εφαρμογές</string>
+    <string name="applock_unlocked_apps">Ξεκλείδωτες εφαρμογές</string>
+    <string name="applock_show_only_on_wake">Ταυτοποίηση μόνο μία φορά</string>
+    <string name="applock_show_only_on_wake_on_summary">Μόλις γίνει έλεγχος ταυτότητας, μια εφαρμογή παραμένει ξεκλείδωτη μέχρι να απενεργοποιηθεί η οθόνη</string>
+    <string name="applock_show_only_on_wake_off_summary">Μόλις γίνει έλεγχος ταυτότητας, μια εφαρμογή παραμένει ξεκλείδωτη για 15 δευτερόλεπτα μετά την έξοδο</string>
+    <string name="applock_notification_info">Μπορείτε να εμφανίσετε / αποκρύψετε το περιεχόμενο ειδοποιήσεων ανά εφαρμογή κάνοντας κλικ στο εικονίδιο ειδοποίησης που εμφανίζεται στην προτίμηση κάθε κλειδωμένης εφαρμογής</string>
+    <string name="applock_show_notif">Εμφάνιση περιεχομένου ειδοποιήσεων</string>
+    <string name="applock_hide_notif">Απόκρυψη περιεχομένου ειδοποιήσεων</string>
+    <string name="applock_setup">Ρύθμιση κλειδώματος εφαρμογών</string>
+    <string name="applock_overlay_summary">Αυτή η λειτουργία δεν είναι διαθέσιμη επειδή αυτή η εφαρμογή είναι κλειδωμένη</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 εφαρμογή κλειδώθηκε</item>
+        <item quantity="other">%d εφαρμογές κλειδώθηκαν</item>
+    </plurals>
+    <string name="keywords_applock_settings">κλείδωμα εφαρμογής, κλείδωμα εφαρμογών, κλείδωμα,</string>
     <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Καταργήστε την υπάρχουσα σάρωση προσώπου και δημιουργήστε μια νέα σάρωση</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Επανάληψη σάρωσης προσώπου</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Κλείδωμα οθόνης, δακτυλικό αποτύπωμα, ξεκλείδωμα προσώπου</string>
+    <string name="face_redo_confirm_btn">Επανάληψη</string>
+    <string name="face_redo_warning_msg">Θέλετε να καταργήσετε την υπάρχουσα σάρωση προσώπου και να δημιουργήσετε μια νέα;</string>
 </resources>
