@@ -41,6 +41,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Octavi Lab -->
+    <string name="octavi_lab_dash_title">Octavi Lab</string>
     <string name="octavi_lab_summary">Customization Laboratory</string>
     <!-- Battery temp -->
     <string name="battery_temp_title">Battery temperature</string>
@@ -50,6 +51,7 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
     <!-- Clock style -->
+    <string name="clock_style_title">Clock style</string>
     <string name="clock_style_summary">Customize lockscreen clock</string>
     <!-- Battery health -->
     <string name="battery_health_title">Battery health</string>
@@ -151,6 +153,12 @@
     <string name="background_processes_settings_title">Procesos en segundo plano</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Detección de bolsillo</string>
+    <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
+    <string name="volume_steps_reset">Restablecer</string>
+    <!-- Running services toggle -->
+    <string name="background_processes_settings_title">Background processes</string>
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
     <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
     <!-- Smart charging -->
     <string name="smart_charging_title">Smart Charging</string>
@@ -187,6 +195,9 @@
     <string name="navbar_radius">Gesture bar Radius</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Swipe up to unlock</string>
+    <string name="security_settings_face_require_swipe_summary">Swipe up on the lockscreen to use face unlock</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>

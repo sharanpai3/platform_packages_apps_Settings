@@ -27,7 +27,7 @@ import androidx.preference.SwitchPreference;
 
 import com.android.settings.Utils;
 
-import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
+import com.android.settings.custom.biometrics.FaceUtils;
 
 /**
  * Preference controller that manages the ability to use face authentication with/without
@@ -125,9 +125,6 @@ public class FaceSettingsAttentionPreferenceController extends FaceSettingsPrefe
 
     @Override
     public int getAvailabilityStatus() {
-        if (FaceUnlockUtils.hasMotoFaceUnlock()){
-            return UNSUPPORTED_ON_DEVICE;
-        }
-        return AVAILABLE;
+        return FaceUtils.isFaceUnlockSupported() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
     }
 }

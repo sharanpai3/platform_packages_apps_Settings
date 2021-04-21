@@ -189,6 +189,9 @@
     <string name="navbar_radius">Радиус панели жестов</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Проведите вверх, чтобы разблокировать</string>
+    <string name="security_settings_face_require_swipe_summary">Проведите вверх по экрану блокировки, чтобы использовать разблокировку по лицу</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">Вибрация при соединении</string>
     <string name="incall_vibrate_call_wait_title">Вибрировать при ожидании</string>

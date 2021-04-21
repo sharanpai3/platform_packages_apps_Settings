@@ -22,7 +22,6 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.hardware.face.FaceManager;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.widget.TextView;
 
 import com.android.settings.R;
@@ -38,7 +37,7 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 import com.google.android.setupdesign.span.LinkSpan;
 import com.google.android.setupdesign.template.RequireScrollMixin;
 
-import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
+import com.android.settings.custom.biometrics.FaceUtils;
 
 public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
 
@@ -46,11 +45,13 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
 
     private FaceManager mFaceManager;
     private FaceFeatureProvider mFaceFeatureProvider;
+    private boolean mForRedo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        mForRedo = getIntent().getBooleanExtra("for_redo", false);
         mFaceManager = Utils.getFaceManagerOrNull(this);
         mFaceFeatureProvider = FeatureFactory.getFactory(getApplicationContext())
                 .getFaceFeatureProvider();
@@ -98,48 +99,11 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
         final TextView footer2 = findViewById(R.id.face_enroll_introduction_footer_part_2);
         final int footer2TextResource =
                 mFaceFeatureProvider.isAttentionSupported(getApplicationContext())
-                        ? R.string.aosp_security_settings_face_enroll_introduction_footer_part_2
+                        ? R.string.security_settings_face_enroll_introduction_footer_part_2
                         : R.string.security_settings_face_settings_footer_attention_not_supported;
         footer2.setText(footer2TextResource);
-        if (FaceUnlockUtils.hasMotoFaceUnlock() && mHasPassword && mToken != null) {
-            openMotoFaceUnlock();
-        }
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (!FaceUnlockUtils.hasMotoFaceUnlock()) {
-            return;
-        }
-        if (requestCode != CHOOSE_LOCK_GENERIC_REQUEST) {
-            if (requestCode != CONFIRM_REQUEST) {
-                if (requestCode == ENROLL_REQUEST) {
-                    if (resultCode == RESULT_FIRST_USER || resultCode == RESULT_OK) {
-                        setResult(RESULT_FIRST_USER);
-                        finish();
-                        return;
-                    }
-                    setResult(RESULT_CANCELED);
-                    finish();
-                }
-            } else if (resultCode == RESULT_OK && data != null) {
-                openMotoFaceUnlock();
-            }
-        } else if (resultCode == RESULT_FIRST_USER) {
-            openMotoFaceUnlock();
-        }
-    }
-
-    private void openMotoFaceUnlock() {
-        Intent intent = new Intent();
-        intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, mToken);
-        if (mUserId != UserHandle.USER_NULL) {
-            intent.putExtra(Intent.EXTRA_USER_ID, mUserId);
-        }
-        intent.setComponent(new ComponentName("com.motorola.faceunlock", "com.motorola.faceunlock.SetupFaceIntroActivity"));
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivityForResult(intent, 5);
+        if (FaceUtils.isFaceUnlockSupported() && mHasPassword && mToken != null) {
+            openCustomFaceUnlockPackage();
         }
     }
 
@@ -248,5 +212,52 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
     @Override
     public void onClick(LinkSpan span) {
         // TODO(b/110906762)
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (!FaceUtils.isFaceUnlockSupported()) {
+            return;
+        }
+        if (requestCode != CHOOSE_LOCK_GENERIC_REQUEST) {
+            if (requestCode != CONFIRM_REQUEST) {
+                if (requestCode == ENROLL_REQUEST) {
+                    if (resultCode == RESULT_FIRST_USER || resultCode == RESULT_OK) {
+                        setResult(RESULT_FIRST_USER);
+                        finish();
+                        return;
+                    }
+                    setResult(RESULT_CANCELED);
+                    finish();
+                }
+            } else if (resultCode == RESULT_OK && data != null) {
+                openCustomFaceUnlockPackage();
+            }
+        } else if (resultCode == RESULT_FIRST_USER) {
+            openCustomFaceUnlockPackage();
+        }
+    }
+
+    private void openCustomFaceUnlockPackage() {
+        ComponentName componentName;
+        Intent intent = new Intent();
+        intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, mToken);
+        if (mUserId != -10000) {
+            intent.putExtra("android.intent.extra.USER_ID", mUserId);
+        }
+        if (mForRedo) {
+            componentName = new ComponentName(
+                "org.pixelexperience.faceunlock",
+                "org.pixelexperience.faceunlock.FaceEnrollActivity");
+        } else {
+            componentName = new ComponentName(
+                "org.pixelexperience.faceunlock",
+                "org.pixelexperience.faceunlock.SetupFaceIntroActivity");
+        }
+        intent.setComponent(componentName);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, ENROLL_REQUEST);
+        }
     }
 }

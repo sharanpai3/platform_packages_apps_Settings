@@ -189,6 +189,9 @@
     <string name="navbar_radius">Radius bilah gestur</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Geser ke atas untuk membuka kunci</string>
+    <string name="security_settings_face_require_swipe_summary">Geser ke atas pada layar kunci untuk menggunakan buka kunci wajah</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">Bergetar saat terhubung</string>
     <string name="incall_vibrate_call_wait_title">Bergetar saat panggilan tunggu</string>

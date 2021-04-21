@@ -189,6 +189,9 @@
     <string name="navbar_radius">Hareket çubuğu Yarıçapı</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Kilidi açmak için yukarı kaydırın</string>
+    <string name="security_settings_face_require_swipe_summary">Yüz kilidini açmak için kilit ekranında yukarı kaydırın</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">Bağlandığında titret</string>
     <string name="incall_vibrate_call_wait_title">Çağrı bekletildiğinde titret</string>
