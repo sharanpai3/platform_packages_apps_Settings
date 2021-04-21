@@ -197,4 +197,29 @@
     <string name="incall_vibrate_call_wait_title">Çağrı bekletildiğinde titret</string>
     <string name="incall_vibrate_disconnect_title">Arama bağlantısı kesildiğinde titret</string>
     <string name="trademark">&#8482;</string>
+    <!-- App Lock -->
+    <string name="applock_title">Uygulama kilitleyici</string>
+    <string name="applock_locked">Kilitli</string>
+    <string name="applock_unlocked">Kilitli değil</string>
+    <string name="applock_locked_apps">Kilitli uygulamalar</string>
+    <string name="applock_unlocked_apps">Kilitli olmayan uygulamalar</string>
+    <string name="applock_show_only_on_wake">Yalnızca bir kez kimlik doğrulama</string>
+    <string name="applock_show_only_on_wake_on_summary">Kimlik doğrulaması yapıldıktan sonra, ekran kapanana kadar uygulamanın kilidi açık kalır</string>
+    <string name="applock_show_only_on_wake_off_summary">Kimlik doğrulaması yapıldıktan sonra, uygulamadan çıktıktan sonra 15 saniye boyunca kilidi açık kalır</string>
+    <string name="applock_notification_info">Kilitli her uygulamanın tercihinde gösterilen bildirim simgesine tıklayarak bildirim içeriğini uygulama bazında gösterebilir veya gizleyebilirsiniz</string>
+    <string name="applock_show_notif">Bildirim içeriği gösteriliyor</string>
+    <string name="applock_hide_notif">Bildirim içeriği gizleniyor</string>
+    <string name="applock_setup">Uygulama kilitleyiciyi ayarlayın</string>
+    <string name="applock_overlay_summary">Uygulama kilitli olduğundan bu özellik kullanılamıyor</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 uygulama kilitli</item>
+        <item quantity="other">%d uygulamalar kilitli</item>
+    </plurals>
+    <string name="keywords_applock_settings">uygulama kilidi, uygulama kilidi, uygulama kilidi, uygulama kilidi</string>
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Mevcut yüz taramasını kaldır ve yeni bir tarama oluştur</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Yüz taramasını yeniden yap</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Ekran kilidi, parmak izi, yüz tanıma kilidi</string>
+    <string name="face_redo_confirm_btn">Yeniden yap</string>
+    <string name="face_redo_warning_msg">Mevcut yüz taramasını kaldırmak ve yeni bir tarama oluşturmak ister misiniz?</string>
 </resources>

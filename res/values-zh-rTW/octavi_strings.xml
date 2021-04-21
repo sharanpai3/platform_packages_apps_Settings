@@ -197,4 +197,28 @@
     <string name="incall_vibrate_call_wait_title">等待接聽電話時震動</string>
     <string name="incall_vibrate_disconnect_title">掛斷時震動</string>
     <string name="trademark">&#8482;</string>
+    <!-- App Lock -->
+    <string name="applock_title">應用程式鎖定</string>
+    <string name="applock_locked">已鎖定</string>
+    <string name="applock_unlocked">未鎖定</string>
+    <string name="applock_locked_apps">已鎖定的應用程式</string>
+    <string name="applock_unlocked_apps">未鎖定的應用程式</string>
+    <string name="applock_show_only_on_wake">只驗證一次</string>
+    <string name="applock_show_only_on_wake_on_summary">一旦通過驗證，應用程式將會保持解除鎖定狀態直到螢幕關閉</string>
+    <string name="applock_show_only_on_wake_off_summary">一旦通過驗證，應用程式將會在關閉後的 15 秒內保持解除鎖定狀態</string>
+    <string name="applock_notification_info">藉由點擊被鎖定應用程式旁的通知圖示，您可以 顯示/隱藏 該應用程式通知內容</string>
+    <string name="applock_show_notif">顯示通知內容</string>
+    <string name="applock_hide_notif">隱藏通知內容</string>
+    <string name="applock_setup">設定應用程式鎖定</string>
+    <string name="applock_overlay_summary">這項功能無法使用，因為此應用程式已被鎖定</string>
+    <plurals name="applock_summary">
+        <item quantity="other">%d 個應用程式已被鎖定</item>
+    </plurals>
+    <string name="keywords_applock_settings">應用程式鎖定、應用程式鎖定、應用程式鎖定、應用程式鎖定</string>
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">移除現有的臉部掃描資料，並建立新的資料</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">重新執行臉部掃描</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">螢幕鎖定、指紋、臉部辨識解鎖</string>
+    <string name="face_redo_confirm_btn">回復上一個動作</string>
+    <string name="face_redo_warning_msg">您要移除現有的臉部掃描資料，並建立新的資料嗎?</string>
 </resources>

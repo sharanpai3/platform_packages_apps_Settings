@@ -16,7 +16,7 @@ package com.android.settings.datausage;
 
 import static android.net.NetworkPolicyManager.POLICY_REJECT_ALL;
 import static android.net.NetworkPolicyManager.POLICY_REJECT_METERED_BACKGROUND;
-import static android.net.NetworkPolicyManager.POLICY_REJECT_CELL;
+import static android.net.NetworkPolicyManager.POLICY_REJECT_CELLULAR;
 import static android.net.NetworkPolicyManager.POLICY_REJECT_VPN;
 import static android.net.NetworkPolicyManager.POLICY_REJECT_WIFI;
 
@@ -76,7 +76,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     private static final String KEY_APP_SETTINGS = "app_settings";
     private static final String KEY_RESTRICT_ALL = "restrict_all";
     private static final String KEY_RESTRICT_BACKGROUND = "restrict_background";
-    private static final String KEY_RESTRICT_CELL = "restrict_cell";
+    private static final String KEY_RESTRICT_CELLULAR = "restrict_cellular";
     private static final String KEY_RESTRICT_VPN = "restrict_vpn";
     private static final String KEY_RESTRICT_WIFI = "restrict_wifi";
     private static final String KEY_APP_LIST = "app_list";
@@ -94,7 +94,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     private Preference mAppSettings;
     private RestrictedSwitchPreference mRestrictAll;
     private RestrictedSwitchPreference mRestrictBackground;
-    private RestrictedSwitchPreference mRestrictCell;
+    private RestrictedSwitchPreference mRestrictCellular;
     private RestrictedSwitchPreference mRestrictVpn;
     private RestrictedSwitchPreference mRestrictWifi;
     private PreferenceCategory mAppList;
@@ -109,7 +109,6 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     private List<NetworkCycleDataForUid> mUsageData;
     @VisibleForTesting
     NetworkTemplate mTemplate;
-    private NetworkPolicyManager mPolicyManager;
     private AppItem mAppItem;
     private Intent mAppSettingsIntent;
     private SpinnerPreference mCycle;
@@ -126,7 +125,6 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
         mPackageManager = getPackageManager();
         final Bundle args = getArguments();
 
-        mPolicyManager = NetworkPolicyManager.from(getContext());
         mAppItem = (args != null) ? (AppItem) args.getParcelable(ARG_APP_ITEM) : null;
         mTemplate = (args != null) ? (NetworkTemplate) args.getParcelable(ARG_NETWORK_TEMPLATE)
                 : null;
@@ -172,7 +170,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
                 removePreference(KEY_UNRESTRICTED_DATA);
                 removePreference(KEY_RESTRICT_ALL);
                 removePreference(KEY_RESTRICT_BACKGROUND);
-                removePreference(KEY_RESTRICT_CELL);
+                removePreference(KEY_RESTRICT_CELLULAR);
                 removePreference(KEY_RESTRICT_VPN);
                 removePreference(KEY_RESTRICT_WIFI);
             } else {
@@ -190,8 +188,8 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
                 mRestrictAll.setOnPreferenceChangeListener(this);
                 mRestrictBackground = findPreference(KEY_RESTRICT_BACKGROUND);
                 mRestrictBackground.setOnPreferenceChangeListener(this);
-                mRestrictCell = findPreference(KEY_RESTRICT_CELL);
-                mRestrictCell.setOnPreferenceChangeListener(this);
+                mRestrictCellular = findPreference(KEY_RESTRICT_CELLULAR);
+                mRestrictCellular.setOnPreferenceChangeListener(this);
                 mRestrictVpn = findPreference(KEY_RESTRICT_VPN);
                 mRestrictVpn.setOnPreferenceChangeListener(this);
                 mRestrictWifi = findPreference(KEY_RESTRICT_WIFI);
@@ -237,7 +235,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
             removePreference(KEY_APP_SETTINGS);
             removePreference(KEY_RESTRICT_ALL);
             removePreference(KEY_RESTRICT_BACKGROUND);
-            removePreference(KEY_RESTRICT_CELL);
+            removePreference(KEY_RESTRICT_CELLULAR);
             removePreference(KEY_RESTRICT_VPN);
             removePreference(KEY_RESTRICT_WIFI);
             removePreference(KEY_APP_LIST);
@@ -273,8 +271,8 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
             setAppRestrictAll(!(Boolean) newValue);
             updatePrefs();
             return true;
-        } else if (preference == mRestrictCell) {
-            setAppRestrictCell(!(Boolean) newValue);
+        } else if (preference == mRestrictCellular) {
+            setAppRestrictCellular(!(Boolean) newValue);
             updatePrefs();
             return true;
         } else if (preference == mRestrictVpn) {
@@ -316,7 +314,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     @VisibleForTesting
     void updatePrefs() {
         updatePrefs(getAppRestrictBackground(), getUnrestrictData(),
-                getAppRestrictCell(), getAppRestrictVpn(), getAppRestrictWifi(),
+                getAppRestrictCellular(), getAppRestrictVpn(), getAppRestrictWifi(),
                 getAppRestrictAll());
     }
 
@@ -326,11 +324,12 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     }
 
     private void updatePrefs(boolean restrictBackground, boolean unrestrictData,
-            boolean restrictCell, boolean restrictVpn, boolean restrictWifi, boolean restrictAll) {
+            boolean restrictCellular, boolean restrictVpn, boolean restrictWifi,
+            boolean restrictAll) {
         final EnforcedAdmin admin = RestrictedLockUtilsInternal.checkIfMeteredDataRestricted(
                 mContext, mPackageName, UserHandle.getUserId(mAppItem.key));
         if (mRestrictBackground != null) {
-            if (restrictCell || restrictAll) {
+            if (restrictCellular || restrictAll) {
                 mRestrictBackground.setEnabled(false);
                 mRestrictBackground.setChecked(false);
             } else {
@@ -342,13 +341,13 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
         if (mRestrictAll != null) {
             mRestrictAll.setChecked(!restrictAll);
         }
-        if (mRestrictCell != null) {
+        if (mRestrictCellular != null) {
             if (restrictAll) {
-                mRestrictCell.setEnabled(false);
-                mRestrictCell.setChecked(false);
+                mRestrictCellular.setEnabled(false);
+                mRestrictCellular.setChecked(false);
             } else {
-                mRestrictCell.setEnabled(true);
-                mRestrictCell.setChecked(!restrictCell);
+                mRestrictCellular.setEnabled(true);
+                mRestrictCellular.setChecked(!restrictCellular);
             }
         }
         if (mRestrictVpn != null) {
@@ -370,7 +369,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
             }
         }
         if (mUnrestrictedData != null) {
-            if (restrictCell || restrictBackground || restrictAll) {
+            if (restrictCellular || restrictBackground || restrictAll) {
                 mUnrestrictedData.setEnabled(false);
                 mUnrestrictedData.setChecked(false);
             } else {
@@ -417,8 +416,8 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
         return getAppRestriction(POLICY_REJECT_ALL);
     }
 
-    private boolean getAppRestrictCell() {
-        return getAppRestriction(POLICY_REJECT_CELL);
+    private boolean getAppRestrictCellular() {
+        return getAppRestriction(POLICY_REJECT_CELLULAR);
     }
 
     private boolean getAppRestrictVpn() {
@@ -446,8 +445,8 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
         setAppRestriction(POLICY_REJECT_ALL, restrict);
     }
 
-    private void setAppRestrictCell(boolean restrict) {
-        setAppRestriction(POLICY_REJECT_CELL, restrict);
+    private void setAppRestrictCellular(boolean restrict) {
+        setAppRestriction(POLICY_REJECT_CELLULAR, restrict);
     }
 
     private void setAppRestrictVpn(boolean restrict) {
@@ -461,9 +460,9 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     private void setAppRestriction(int policy, boolean restrict) {
         final int uid = mAppItem.key;
         if (restrict) {
-            mPolicyManager.addUidPolicy(uid, policy);
+            services.mPolicyManager.addUidPolicy(uid, policy);
         } else {
-            mPolicyManager.removeUidPolicy(uid, policy);
+            services.mPolicyManager.removeUidPolicy(uid, policy);
         }
     }
 
@@ -599,7 +598,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     public void onWhitelistStatusChanged(int uid, boolean isWhitelisted) {
         if (mAppItem.uids.get(uid, false)) {
             updatePrefs(getAppRestrictBackground(), isWhitelisted,
-                    getAppRestrictCell(), getAppRestrictVpn(), getAppRestrictWifi(),
+                    getAppRestrictCellular(), getAppRestrictVpn(), getAppRestrictWifi(),
                     getAppRestrictAll());
         }
     }
@@ -608,7 +607,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     public void onBlacklistStatusChanged(int uid, boolean isBlacklisted) {
         if (mAppItem.uids.get(uid, false)) {
             updatePrefs(isBlacklisted, getUnrestrictData(),
-                    getAppRestrictCell(), getAppRestrictVpn(), getAppRestrictWifi(),
+                    getAppRestrictCellular(), getAppRestrictVpn(), getAppRestrictWifi(),
                     getAppRestrictAll());
         }
     }

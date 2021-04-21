@@ -197,4 +197,6 @@
     <string name="incall_vibrate_call_wait_title">Вибрировать при ожидании</string>
     <string name="incall_vibrate_disconnect_title">Вибрация при разъединении</string>
     <string name="trademark">&#8482;</string>
+    <!-- App Lock -->
+    <!-- Face Unlock -->
 </resources>

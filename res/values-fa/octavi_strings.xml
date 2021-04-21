@@ -197,4 +197,7 @@
     <string name="incall_vibrate_call_wait_title">لرزش هنگام انتظار تماس</string>
     <string name="incall_vibrate_disconnect_title">لرزش در هنگام قطع تماس</string>
     <string name="trademark">&#8482;</string>
+    <!-- App Lock -->
+    <string name="applock_unlocked">باز شد</string>
+    <!-- Face Unlock -->
 </resources>
