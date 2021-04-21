@@ -95,15 +95,6 @@
     <string name="lockpattern_settings_enable_error_path_title">نمایش خطای کشیده شدن الگو</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">نمایش نقطه ها در حالت قفل الگویی</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">اجازه‌ی دسترسی به شبکه اینترنت</string>
-    <string name="data_usage_app_restrict_all_summary">فعال‌کردن استفاده از شبکه</string>
-    <string name="data_usage_app_restrict_mobile">اینترنت دیتا</string>
-    <string name="data_usage_app_restrict_mobile_summary">استفاده از داده تلفن همراه را فعال کنید</string>
-    <string name="data_usage_app_restrict_vpn">داده‌ وی پی ان</string>
-    <string name="data_usage_app_restrict_vpn_summary">فعال کردن استفاده از داده وی پی ان</string>
-    <string name="data_usage_app_restrict_wifi">داده وای فای</string>
-    <string name="data_usage_app_restrict_wifi_summary">استفاده از داده وای فای را فعال کنید</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">اعلان‌ها، اعلان‌های ثبت‌شده</string>
     <!-- Adaptive Playback -->
@@ -189,9 +180,6 @@
     <string name="navbar_radius">Gesture bar Radius</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
-    <!-- Swipe up for face unlock -->
-    <string name="security_settings_face_require_swipe">برای باز کردن قفل به سمت بالا بکشید</string>
-    <string name="security_settings_face_require_swipe_summary">برای استفاده از قفل چهره بر روی صفحه قفل به بالا بکشید</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">لرزش در هنگام شروع اتصال</string>
     <string name="incall_vibrate_call_wait_title">لرزش هنگام انتظار تماس</string>
@@ -199,5 +187,14 @@
     <string name="trademark">&#8482;</string>
     <!-- App Lock -->
     <string name="applock_unlocked">باز شد</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">اجازه‌ی دسترسی به شبکه اینترنت</string>
+    <string name="data_usage_app_restrict_all_summary">فعال‌کردن استفاده از شبکه</string>
+    <string name="data_usage_app_restrict_mobile">اینترنت دیتا</string>
+    <string name="data_usage_app_restrict_mobile_summary">استفاده از داده تلفن همراه را فعال کنید</string>
+    <string name="data_usage_app_restrict_vpn">داده‌ وی پی ان</string>
+    <string name="data_usage_app_restrict_vpn_summary">فعال کردن استفاده از داده وی پی ان</string>
+    <string name="data_usage_app_restrict_wifi">داده وای فای</string>
+    <string name="data_usage_app_restrict_wifi_summary">استفاده از داده وای فای را فعال کنید</string>
     <!-- Face Unlock -->
 </resources>
