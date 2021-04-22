@@ -41,7 +41,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Octavi Lab -->
-    <string name="octavi_lab_dash_title">Лаборатория Octavi</string>
+    <string name="octavi_lab_dash_title">Octavi Lab</string>
     <string name="octavi_lab_summary">Лаборатория настроек</string>
     <!-- Battery temp -->
     <string name="battery_temp_title">Температура батареи</string>
@@ -70,7 +70,7 @@
     <string name="custom_light_title">Цвет светодиода</string>
     <string name="custom_light_on_time_title">Время свечения светодиода (мс)</string>
     <string name="custom_light_off_time_title">Время паузы между свечениями (мс)</string>
-    <string name="value_equals_default">по умолч</string>
+    <string name="value_equals_default">def</string>
     <!-- Scramble pin -->
     <string name="unlock_scramble_pin_layout_title">Перемешать кнопки</string>
     <string name="unlock_scramble_pin_layout_summary">Переставлять кнопки ввода PIN-кода в случайном порядке</string>
@@ -165,11 +165,11 @@
     <string name="show_clipboard_toast_summary">Отображать всплывающее уведомление, когда приложение пытается получить доступ к буферу обмена</string>
     <!-- Vibration patterns -->
     <string name="vibration_pattern_title">Тип вибрации при звонке</string>
-    <string name="pattern_dzzz_dzzz">дззз-дззз</string>
-    <string name="pattern_dzzz_da">дззз-да</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
     <string name="pattern_mm_mm_mm">мм-мм-мм</string>
-    <string name="pattern_da_da_dzzz">да-да-дзз</string>
-    <string name="pattern_da_dzzz_da">да-дззз-да</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
     <string name="pattern_custom">Свой</string>
     <string name="custom_vibration_pattern_title">Свой шаблон</string>
     <!-- Increasing ring tone volume -->
