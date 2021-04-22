@@ -41,7 +41,6 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Octavi Lab -->
-    <string name="octavi_lab_dash_title">Octavi Lab</string>
     <string name="octavi_lab_summary">مختبر التعديلات</string>
     <!-- Battery temp -->
     <string name="battery_temp_title">حرارة البطارية</string>
@@ -51,7 +50,6 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">صوت لقطة الشاشة</string>
     <!-- Clock style -->
-    <string name="clock_style_title">Clock style</string>
     <string name="clock_style_summary">تخصيص ساعة شاشة القفل</string>
     <!-- Battery health -->
     <string name="battery_health_title">صحة البطارية</string>
@@ -65,7 +63,6 @@
     <string name="display_cutout_force_fullscreen_title">تطبيقات تملأ الشاشة</string>
     <string name="display_cutout_force_fullscreen_summary">فرض التطبيقات على تجاهل مكان قطع الشاشة</string>
     <!-- Advanced powermenu -->
-    <string name="global_actions_title">Power menu</string>
     <!-- Custom light color -->
     <string name="custom_light_title">لون الضوء</string>
     <string name="custom_light_on_time_title">وقت تشغيل الضوء أثناء نبض الليد (مث)</string>
@@ -80,7 +77,6 @@
     <!-- Misc gesture settings -->
     <string name="back_gesture_haptic_title">الإستجابة الإهتزازية</string>
     <string name="back_gesture_haptic_summary">تفعيل الإهتزاز عند إيماء الرجوع</string>
-    <string name="weather_title">Weather</string>
     <!-- Navbar length -->
     <string name="navbar_length">طول شريط الإيماء</string>
     <string name="hidden_label">خفي</string>
@@ -95,15 +91,6 @@
     <string name="lockpattern_settings_enable_error_path_title">إظهار الخطأ بالنمط</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">إظهار نقاط النمط</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">السماح بالوصول للشبكة</string>
-    <string name="data_usage_app_restrict_all_summary">تفعيل إستخدام الشبكة</string>
-    <string name="data_usage_app_restrict_mobile">بيانات الهاتف</string>
-    <string name="data_usage_app_restrict_mobile_summary">تفعيل استخدام بيانات الهاتف</string>
-    <string name="data_usage_app_restrict_vpn">بيانات الـVPN</string>
-    <string name="data_usage_app_restrict_vpn_summary">تفعيل إستخدام بيانات الVPN</string>
-    <string name="data_usage_app_restrict_wifi">بيانات ال واي\u2011فاي</string>
-    <string name="data_usage_app_restrict_wifi_summary">تفعيل إستخدام بيانات الواي\u2011فاي</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">الإشعارات، سجل الإشعارات</string>
     <!-- Adaptive Playback -->
@@ -119,9 +106,6 @@
     <string name="adaptive_playback_timeout_2_min">دقيقتان</string>
     <string name="adaptive_playback_timeout_2_min_summary">مشغل (دقيقتان)</string>
     <string name="adaptive_playback_timeout_5_min_summary">مشغل (5 دقائق)</string>
-    <string name="adaptive_playback_timeout_5_min">5 minutes</string>
-    <string name="adaptive_playback_timeout_5_min_summary">مشغل (5 دقائق)</string>
-    <string name="adaptive_playback_timeout_10_min">10 minutes</string>
     <string name="adaptive_playback_timeout_10_min_summary">مشغل (10 دقائق)</string>
     <string name="adaptive_playback_explainer">التشغيل التأقلمي سوف يوقف الوسائط تلقائياً عندما يُكتم الصوت و سوف يستأنف التشغيل عندما يعود الصوت ضمن الوقت المحدد.</string>
     <!-- Back gesture height -->
@@ -149,7 +133,6 @@
     <string name="volume_steps_ring_title">درجات الصوت: الرنين</string>
     <string name="volume_steps_system_title">درجات الصوت: النظام</string>
     <string name="volume_steps_voice_call_title">درجات الصوت: صوت المكالمة</string>
-    <string name="volume_steps_reset">Reset</string>
     <!-- Running services toggle -->
     <string name="background_processes_settings_title">العمليات الخلفية</string>
     <!-- Pocket judge -->
@@ -190,14 +173,20 @@
     <string name="navbar_radius">طول شريط الإيماء</string>
     <string name="small_label">1 منزلة عشرية</string>
     <string name="big_label">4 منزلة عشرية</string>
-    <!-- Swipe up for face unlock -->
-    <string name="security_settings_face_require_swipe">اسحب للأعلى لفتح القفل</string>
-    <string name="security_settings_face_require_swipe_summary">اسحب للأعلى بشاشة القفل لفك القفل بالوجه</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">الإهتزاز عند الإتصال</string>
     <string name="incall_vibrate_call_wait_title">الإهتزاز عند إنتظار المكالمة</string>
     <string name="incall_vibrate_disconnect_title">الإهتزاز عند قطع الإتصال</string>
     <string name="trademark">&#8482;</string>
     <!-- App Lock -->
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">السماح بالوصول للشبكة</string>
+    <string name="data_usage_app_restrict_all_summary">تفعيل إستخدام الشبكة</string>
+    <string name="data_usage_app_restrict_mobile">بيانات الهاتف</string>
+    <string name="data_usage_app_restrict_mobile_summary">تفعيل استخدام بيانات الهاتف</string>
+    <string name="data_usage_app_restrict_vpn">بيانات الـVPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">تفعيل إستخدام بيانات الVPN</string>
+    <string name="data_usage_app_restrict_wifi">بيانات ال واي\u2011فاي</string>
+    <string name="data_usage_app_restrict_wifi_summary">تفعيل إستخدام بيانات الواي\u2011فاي</string>
     <!-- Face Unlock -->
 </resources>
