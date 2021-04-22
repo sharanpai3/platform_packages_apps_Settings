@@ -95,15 +95,6 @@
     <string name="lockpattern_settings_enable_error_path_title">Tampilkan kesalahan pola</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Tampilkan titik-titik pola</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">Izinkan akses jaringan</string>
-    <string name="data_usage_app_restrict_all_summary">Aktifkan penggunaan jaringan</string>
-    <string name="data_usage_app_restrict_mobile">Data Seluler</string>
-    <string name="data_usage_app_restrict_mobile_summary">Aktifkan penggunaan data seluler</string>
-    <string name="data_usage_app_restrict_vpn">Data VPN</string>
-    <string name="data_usage_app_restrict_vpn_summary">Aktifkan penggunaan data VPN</string>
-    <string name="data_usage_app_restrict_wifi">Data Wi\u2011Fi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Aktifkan penggunaan data Wi\u2011Fi</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifikasi, log notifikasi</string>
     <!-- Adaptive Playback -->
@@ -189,9 +180,6 @@
     <string name="navbar_radius">Radius bilah gestur</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
-    <!-- Swipe up for face unlock -->
-    <string name="security_settings_face_require_swipe">Geser ke atas untuk membuka kunci</string>
-    <string name="security_settings_face_require_swipe_summary">Geser ke atas pada layar kunci untuk menggunakan buka kunci wajah</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">Bergetar saat terhubung</string>
     <string name="incall_vibrate_call_wait_title">Bergetar saat panggilan tunggu</string>
@@ -215,6 +203,15 @@
         <item quantity="other">%d aplikasi terkunci</item>
     </plurals>
     <string name="keywords_applock_settings">kunci aplikasi, pengunci aplikasi, loker aplikasi</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Izinkan akses jaringan</string>
+    <string name="data_usage_app_restrict_all_summary">Aktifkan penggunaan jaringan</string>
+    <string name="data_usage_app_restrict_mobile">Data Seluler</string>
+    <string name="data_usage_app_restrict_mobile_summary">Aktifkan penggunaan data seluler</string>
+    <string name="data_usage_app_restrict_vpn">Data VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Aktifkan penggunaan data VPN</string>
+    <string name="data_usage_app_restrict_wifi">Data Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Aktifkan penggunaan data Wi\u2011Fi</string>
     <!-- Face Unlock -->
     <string name="security_settings_face_unlock_redo_face_scan_summary">Hapus pemindaian wajah yang ada dan buat pemindaian baru</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">Ulangi pemindaian wajah</string>

@@ -95,15 +95,6 @@
     <string name="lockpattern_settings_enable_error_path_title">顯示繪製錯誤的解鎖圖案</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">顯示解鎖圖案節點</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">允許網路存取</string>
-    <string name="data_usage_app_restrict_all_summary">允許網路流量</string>
-    <string name="data_usage_app_restrict_mobile">行動數據</string>
-    <string name="data_usage_app_restrict_mobile_summary">啟用行動數據</string>
-    <string name="data_usage_app_restrict_vpn">VPN 數據</string>
-    <string name="data_usage_app_restrict_vpn_summary">啟用 VPN 數據</string>
-    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 數據</string>
-    <string name="data_usage_app_restrict_wifi_summary">啟用 Wi\u2011Fi 數據</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">通知、通知紀錄</string>
     <!-- Adaptive Playback -->
@@ -189,9 +180,6 @@
     <string name="navbar_radius">手勢欄範圍大小</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
-    <!-- Swipe up for face unlock -->
-    <string name="security_settings_face_require_swipe">向上滑動即可解鎖</string>
-    <string name="security_settings_face_require_swipe_summary">向上滑動鎖定螢幕以使用臉部辨識解鎖</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">接通時震動</string>
     <string name="incall_vibrate_call_wait_title">等待接聽電話時震動</string>
@@ -215,6 +203,15 @@
         <item quantity="other">%d 個應用程式已被鎖定</item>
     </plurals>
     <string name="keywords_applock_settings">應用程式鎖定、應用程式鎖定、應用程式鎖定、應用程式鎖定</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">允許網路存取</string>
+    <string name="data_usage_app_restrict_all_summary">允許網路流量</string>
+    <string name="data_usage_app_restrict_mobile">行動數據</string>
+    <string name="data_usage_app_restrict_mobile_summary">啟用行動數據</string>
+    <string name="data_usage_app_restrict_vpn">VPN 數據</string>
+    <string name="data_usage_app_restrict_vpn_summary">啟用 VPN 數據</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 數據</string>
+    <string name="data_usage_app_restrict_wifi_summary">啟用 Wi\u2011Fi 數據</string>
     <!-- Face Unlock -->
     <string name="security_settings_face_unlock_redo_face_scan_summary">移除現有的臉部掃描資料，並建立新的資料</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">重新執行臉部掃描</string>

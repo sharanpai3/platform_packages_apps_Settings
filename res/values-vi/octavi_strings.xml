@@ -95,15 +95,6 @@
     <string name="lockpattern_settings_enable_error_path_title">Lỗi hiển thị mẫu hình</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Hiện dấu chấm mẫu hình</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">Cho phép truy cập mạng</string>
-    <string name="data_usage_app_restrict_all_summary">Cho phép sử dụng mạng</string>
-    <string name="data_usage_app_restrict_mobile">Dữ liệu di động</string>
-    <string name="data_usage_app_restrict_mobile_summary">Cho phép sử dụng dữ liệu di động</string>
-    <string name="data_usage_app_restrict_vpn">Dữ liệu VPN</string>
-    <string name="data_usage_app_restrict_vpn_summary">Cho phép sử dụng dữ liệu VPN</string>
-    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi dữ liệu</string>
-    <string name="data_usage_app_restrict_wifi_summary">Bật mức sử dụng dữ liệu Wi\u2011Fi</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">Thông báo, báo cáo thông báo</string>
     <!-- Adaptive Playback -->
@@ -189,9 +180,6 @@
     <string name="navbar_radius">Kích thước thanh điều hướng</string>
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
-    <!-- Swipe up for face unlock -->
-    <string name="security_settings_face_require_swipe">Vuốt lên để mở khóa</string>
-    <string name="security_settings_face_require_swipe_summary">Vuốt lên hoặc sử dụng gương mặt để mở khoá màn hình </string>
     <!-- Incall vibrate options -->
     <string name="incall_vibrate_connect_title">Rung khi kết nối</string>
     <string name="incall_vibrate_call_wait_title">Rung khi chờ cuộc gọi</string>
@@ -215,6 +203,15 @@
         <item quantity="other">1 ứng dụng đã khóa</item>
     </plurals>
     <string name="keywords_applock_settings">khóa ứng dụng, khóa ứng dụng, khóa ứng dụng, khóa ứng dụng</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Cho phép truy cập mạng</string>
+    <string name="data_usage_app_restrict_all_summary">Cho phép sử dụng mạng</string>
+    <string name="data_usage_app_restrict_mobile">Dữ liệu di động</string>
+    <string name="data_usage_app_restrict_mobile_summary">Cho phép sử dụng dữ liệu di động</string>
+    <string name="data_usage_app_restrict_vpn">Dữ liệu VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Cho phép sử dụng dữ liệu VPN</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi dữ liệu</string>
+    <string name="data_usage_app_restrict_wifi_summary">Bật mức sử dụng dữ liệu Wi\u2011Fi</string>
     <!-- Face Unlock -->
     <string name="security_settings_face_unlock_redo_face_scan_summary">Xóa quét khuôn mặt hiện có và tạo quét khuôn mặt mới</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">Quét lại khuôn mặt</string>

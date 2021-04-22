@@ -41,6 +41,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Octavi Lab -->
+    <string name="octavi_lab_dash_title">Octavi Laboratoř</string>
     <string name="octavi_lab_summary">Laboratoř přizpůsobení</string>
     <!-- Battery temp -->
     <string name="battery_temp_title">Teplota baterie</string>
@@ -94,15 +95,6 @@
     <string name="lockpattern_settings_enable_error_path_title">Zobrazit vzor chybného gesta</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Zobrazit body gesta</string>
-    <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
-    <string name="data_usage_app_restrict_all_summary">Povolit využití sítě</string>
-    <string name="data_usage_app_restrict_mobile">Mobilní data</string>
-    <string name="data_usage_app_restrict_mobile_summary">Povolit používání mobilních dat</string>
-    <string name="data_usage_app_restrict_vpn">VPN data</string>
-    <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
-    <string name="data_usage_app_restrict_wifi">Data přes Wi‑Fi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi-Fi dat</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">oznámení, protokol oznámení</string>
     <!-- Adaptive Playback -->
@@ -214,6 +206,15 @@
         <item quantity="other">1 aplikace uzamčena</item>
     </plurals>
     <string name="keywords_applock_settings">uzamknout aplikaci, uzamykání aplikace, uzamčení aplikace, zámek aplikací</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
+    <string name="data_usage_app_restrict_all_summary">Povolit využití sítě</string>
+    <string name="data_usage_app_restrict_mobile">Mobilní data</string>
+    <string name="data_usage_app_restrict_mobile_summary">Povolit používání mobilních dat</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
+    <string name="data_usage_app_restrict_wifi">Data přes Wi‑Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi-Fi dat</string>
     <!-- Face Unlock -->
     <string name="security_settings_face_unlock_redo_face_scan_summary">Odstranit stávající sken obličeje a vytvořit nový</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">Znovu naskenovat obličej</string>
