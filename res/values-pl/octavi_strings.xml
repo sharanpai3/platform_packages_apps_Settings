@@ -182,6 +182,7 @@
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <string name="trademark">&#8482;</string>
     <!-- App Lock -->
+    <!-- Face Unlock -->
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Allow network access</string>
     <string name="data_usage_app_restrict_all_summary">Enable network usage</string>
@@ -191,5 +192,10 @@
     <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
-    <!-- Face Unlock -->
+    <!-- global cleartext penalties -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary2">Wyłączony</string>
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
 </resources>
