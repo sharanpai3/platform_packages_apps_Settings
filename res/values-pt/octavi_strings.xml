@@ -186,6 +186,7 @@
     <string name="incall_vibrate_disconnect_title">Vibrar ao desligar</string>
     <string name="trademark">&#8482;</string>
     <!-- App Lock -->
+    <!-- Face Unlock -->
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Permitir acesso à rede</string>
     <string name="data_usage_app_restrict_all_summary">Permitir que as aplicações se liguem à rede</string>
@@ -195,5 +196,16 @@
     <string name="data_usage_app_restrict_vpn_summary">Ativar a utilização de dados VPN</string>
     <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Ativar o uso de dados Wi\u2011Fi</string>
-    <!-- Face Unlock -->
+    <!-- global cleartext penalties -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary2">Desligado</string>
+    <string name="wifi_timeout_summary_5mins">5 minutos</string>
+    <string name="wifi_timeout_summary_10mins">10 minutos</string>
+    <string name="wifi_timeout_summary_30mins">30 minutos</string>
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary_5mins">5 minutos</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minutos</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minutos</string>
 </resources>
