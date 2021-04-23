@@ -191,9 +191,6 @@
     <string name="applock_unlocked">已解锁</string>
     <string name="applock_locked_apps">已锁定的应用</string>
     <string name="applock_unlocked_apps">已解锁的应用</string>
-    <string name="applock_show_only_on_wake">仅验证一次</string>
-    <string name="applock_show_only_on_wake_on_summary">一旦验证，应用程序将保持解锁状态，直到屏幕关闭</string>
-    <string name="applock_show_only_on_wake_off_summary">验证成功后，应用退出后将保持解锁状态15秒钟</string>
     <string name="applock_notification_info">您可以通过点击每个锁定应用首选项中显示的通知图标来显示/隐藏每个应用的通知内容</string>
     <string name="applock_show_notif">显示通知内容</string>
     <string name="applock_hide_notif">隐藏通知内容</string>
@@ -203,6 +200,12 @@
         <item quantity="other">%d 个应用已锁定</item>
     </plurals>
     <string name="keywords_applock_settings">应用锁，应用锁屏，应用锁，应用锁</string>
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">移除现有的人脸数据并重新录入</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">重新录入人脸数据</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">屏幕锁定、指纹、人脸解锁</string>
+    <string name="face_redo_confirm_btn">重做</string>
+    <string name="face_redo_warning_msg">是否要移除现有的人脸数据并重新录入？</string>
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">允许网络访问</string>
     <string name="data_usage_app_restrict_all_summary">启用网络使用</string>
@@ -212,10 +215,16 @@
     <string name="data_usage_app_restrict_vpn_summary">启用 VPN 数据的使用</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 数据</string>
     <string name="data_usage_app_restrict_wifi_summary">启用 Wi\u2011Fi 数据的使用</string>
-    <!-- Face Unlock -->
-    <string name="security_settings_face_unlock_redo_face_scan_summary">移除现有的人脸数据并重新录入</string>
-    <string name="security_settings_face_unlock_redo_face_scan_title">重新录入人脸数据</string>
-    <string name="security_dashboard_summary_face_and_fingerprint">屏幕锁定、指纹、人脸解锁</string>
-    <string name="face_redo_confirm_btn">重做</string>
-    <string name="face_redo_warning_msg">是否要移除现有的人脸数据并重新录入？</string>
+    <!-- global cleartext penalties -->
+    <!--  screen, setting option name to change wifi timeout -->
+    <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary2">禁用</string>
+    <string name="wifi_timeout_summary_5mins">5 分钟</string>
+    <string name="wifi_timeout_summary_10mins">10 分钟</string>
+    <string name="wifi_timeout_summary_30mins">30 分钟</string>
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary_5mins">5 分钟</string>
+    <string name="bluetooth_timeout_summary_10mins">10 分钟</string>
+    <string name="bluetooth_timeout_summary_30mins">30 分钟</string>
 </resources>
