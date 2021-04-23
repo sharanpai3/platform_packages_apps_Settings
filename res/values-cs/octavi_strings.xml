@@ -172,6 +172,7 @@
     <string name="pattern_da_dzzz_da">da-dzzz-da</string>
     <string name="pattern_custom">Vlastní</string>
     <string name="custom_vibration_pattern_title">Vlastní vzor</string>
+    <string name="custom_vibration_pattern_summary">Nastavit vlastní vzor vibrací</string>
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Zvyšující se hlasitost vyzvánění</string>
     <string name="increasing_ring_min_volume_title">Počáteční hlasitost</string>
@@ -191,9 +192,14 @@
     <string name="applock_unlocked">Odemčeno</string>
     <string name="applock_locked_apps">Uzamknuté aplikace</string>
     <string name="applock_unlocked_apps">Odemčené aplikace</string>
-    <string name="applock_show_only_on_wake">Ověřit pouze jednou</string>
-    <string name="applock_show_only_on_wake_on_summary">Po ověření zůstane aplikace odemknutá, dokud se nevypne obrazovka</string>
-    <string name="applock_show_only_on_wake_off_summary">Po ověření zůstane aplikace odemknutá po dobu 15 sekund od jejího ukončení</string>
+    <string name="applock_lock_after_title">Zamknout aplikaci po</string>
+    <string name="applock_lock_after_instantly">Okamžitě</string>
+    <string name="applock_lock_after_15_seconds">15 Sekund</string>
+    <string name="applock_lock_after_screen_off">Vypnout obrazovku</string>
+    <string name="applock_lock_after_summary">Po zvoleném časovém limitu bude aplikace uzamčena</string>
+    <string name="applock_lock_after_instantly_summary">Po zavření bude aplikace okamžitě uzamčena</string>
+    <string name="applock_lock_after_15_seconds_summary">15 sekund po ukončení bude aplikace uzamčena</string>
+    <string name="applock_lock_after_screen_off_summary">Po vypnutí obrazovky bude aplikace uzamčena</string>
     <string name="applock_notification_info">Obsah oznámení můžete zobrazit nebo skrýt pro jednotlivé aplikace kliknutím na ikonu oznámení zobrazenou v předvolbách každé zamčené aplikace</string>
     <string name="applock_show_notif">Obsah oznámení je zobrazován</string>
     <string name="applock_hide_notif">Skrýt obsah oznámení</string>
@@ -206,6 +212,12 @@
         <item quantity="other">1 aplikace uzamčena</item>
     </plurals>
     <string name="keywords_applock_settings">uzamknout aplikaci, uzamykání aplikace, uzamčení aplikace, zámek aplikací</string>
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Odstranit stávající sken obličeje a vytvořit nový</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Znovu naskenovat obličej</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Zámek obrazovky, otisk prstu, odemknutí obličejem</string>
+    <string name="face_redo_confirm_btn">Opakovat akci</string>
+    <string name="face_redo_warning_msg">Chcete odstranit stávající sken obličeje a vytvořit nový?</string>
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
     <string name="data_usage_app_restrict_all_summary">Povolit využití sítě</string>
@@ -215,10 +227,41 @@
     <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
     <string name="data_usage_app_restrict_wifi">Data přes Wi‑Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi-Fi dat</string>
-    <!-- Face Unlock -->
-    <string name="security_settings_face_unlock_redo_face_scan_summary">Odstranit stávající sken obličeje a vytvořit nový</string>
-    <string name="security_settings_face_unlock_redo_face_scan_title">Znovu naskenovat obličej</string>
-    <string name="security_dashboard_summary_face_and_fingerprint">Zámek obrazovky, otisk prstu, odemknutí obličejem</string>
-    <string name="face_redo_confirm_btn">Opakovat akci</string>
-    <string name="face_redo_warning_msg">Chcete odstranit stávající sken obličeje a vytvořit nový?</string>
+    <!-- global cleartext penalties -->
+    <string name="cleartext_network_policy_title">Omezit vyprázdnění síťového provozu</string>
+    <string name="cleartext_network_policy_summary">Blokuje veškerý provoz sítě jiné než TLS. Vyžaduje soukromou konfiguraci DNS. Poznámka: Bez výslovných výjimek nebudou Tor a většina VPN fungovat</string>
+    <!--  screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Automaticky vypnout Wi-Fi</string>
+    <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">Wi-Fi se vypne za <xliff:g id="timeout_description">%1$s</xliff:g>, pokud není připojena žádná síť</string>
+    <string name="wifi_timeout_summary2">Deaktivováno</string>
+    <string name="wifi_timeout_summary_never">Nikdy</string>
+    <string name="wifi_timeout_summary_15secs">15 sekund</string>
+    <string name="wifi_timeout_summary_30secs">30 sekund</string>
+    <string name="wifi_timeout_summary_1min">1 minuta</string>
+    <string name="wifi_timeout_summary_2mins">2 minuty</string>
+    <string name="wifi_timeout_summary_5mins">5 minut</string>
+    <string name="wifi_timeout_summary_10mins">10 minut</string>
+    <string name="wifi_timeout_summary_30mins">30 minut</string>
+    <string name="wifi_timeout_summary_1hour">1 hodina</string>
+    <string name="wifi_timeout_summary_2hours">2 hodiny</string>
+    <string name="wifi_timeout_summary_4hours">4 hodiny</string>
+    <string name="wifi_timeout_summary_8hours">8 hodin</string>
+    <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Časový limit Bluetooth</string>
+    <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">Pokud nejsou připojena žádná zařízení, Bluetooth se vypne za <xliff:g id="timeout_description">%1$s</xliff:g></string>
+    <string name="bluetooth_timeout_summary2">Automaticky nevypínat Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Nikdy</string>
+    <string name="bluetooth_timeout_summary_15secs">15 sekund</string>
+    <string name="bluetooth_timeout_summary_30secs">30 sekund</string>
+    <string name="bluetooth_timeout_summary_1min">1 minuta</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minuty</string>
+    <string name="bluetooth_timeout_summary_5mins">5 minut</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minut</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minut</string>
+    <string name="bluetooth_timeout_summary_1hour">1 hodina</string>
+    <string name="bluetooth_timeout_summary_2hours">2 hodiny</string>
+    <string name="bluetooth_timeout_summary_4hours">4 hodiny</string>
+    <string name="bluetooth_timeout_summary_8hours">8 hodin</string>
 </resources>
