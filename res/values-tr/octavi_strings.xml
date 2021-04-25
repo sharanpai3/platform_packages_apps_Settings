@@ -172,6 +172,7 @@
     <string name="pattern_da_dzzz_da">da-dzzz-da</string>
     <string name="pattern_custom">Özel</string>
     <string name="custom_vibration_pattern_title">Özel desen</string>
+    <string name="custom_vibration_pattern_summary">Özel bir titreşim modeli ayarlayın</string>
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Artan zil sesi</string>
     <string name="increasing_ring_min_volume_title">Başlangıç sesi</string>
@@ -191,6 +192,14 @@
     <string name="applock_unlocked">Kilitli değil</string>
     <string name="applock_locked_apps">Kilitli uygulamalar</string>
     <string name="applock_unlocked_apps">Kilitli olmayan uygulamalar</string>
+    <string name="applock_lock_after_title">Sonrasında uygulamayı kilitle</string>
+    <string name="applock_lock_after_instantly">Anında</string>
+    <string name="applock_lock_after_15_seconds">15 Saniye</string>
+    <string name="applock_lock_after_screen_off">Ekran kapalı</string>
+    <string name="applock_lock_after_summary">Uygulama seçilen zaman aşımından sonra kilitlenecek</string>
+    <string name="applock_lock_after_instantly_summary">Uygulama kapatıldığında anında kilitlenecek</string>
+    <string name="applock_lock_after_15_seconds_summary">Kapandıktan 15 saniye sonra uygulama kilitlenecek</string>
+    <string name="applock_lock_after_screen_off_summary">Ekran kapatıldığında uygulama kilitlenecek</string>
     <string name="applock_notification_info">Kilitli her uygulamanın tercihinde gösterilen bildirim simgesine tıklayarak bildirim içeriğini uygulama bazında gösterebilir veya gizleyebilirsiniz</string>
     <string name="applock_show_notif">Bildirim içeriği gösteriliyor</string>
     <string name="applock_hide_notif">Bildirim içeriği gizleniyor</string>
@@ -217,15 +226,40 @@
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi verisi</string>
     <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi veri kullanımını etkinleştir</string>
     <!-- global cleartext penalties -->
+    <string name="cleartext_network_policy_title">Açık metin ağ trafiğini kısıtla</string>
+    <string name="cleartext_network_policy_summary">TLS dışı tüm ağ trafiğini engeller. Özel DNS yapılandırması gerektirir. Not: Açık muafiyetler olmadan Tor ve çoğu VPN çalışmaz</string>
     <!--  screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Wi-Fi zaman aşımı</string>
     <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">Hiçbir cihaz bağlı değilse <xliff:g id="timeout_description">%1$s</xliff:g> sonra Wi-Fi kapanacak</string>
     <string name="wifi_timeout_summary2">Devre dışı</string>
+    <string name="wifi_timeout_summary_never">Hiçbir zaman</string>
+    <string name="wifi_timeout_summary_15secs">15 saniye</string>
+    <string name="wifi_timeout_summary_30secs">30 saniye</string>
+    <string name="wifi_timeout_summary_1min">1 dakika</string>
+    <string name="wifi_timeout_summary_2mins">2 dakika</string>
     <string name="wifi_timeout_summary_5mins">5 dakika</string>
     <string name="wifi_timeout_summary_10mins">10 dakika</string>
     <string name="wifi_timeout_summary_30mins">30 dakika</string>
+    <string name="wifi_timeout_summary_1hour">1 saat</string>
+    <string name="wifi_timeout_summary_2hours">2 saat</string>
+    <string name="wifi_timeout_summary_4hours">4 saat</string>
+    <string name="wifi_timeout_summary_8hours">8 saat</string>
     <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Bluetooth zaman aşımı</string>
     <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">Hiçbir cihaz bağlı değilse <xliff:g id="timeout_description">%1$s</xliff:g> sonra Bluetooth kapanacak</string>
+    <string name="bluetooth_timeout_summary2">Bluetooth\'u otomatik olarak kapatma</string>
+    <string name="bluetooth_timeout_summary_never">Hiçbir zaman</string>
+    <string name="bluetooth_timeout_summary_15secs">15 saniye</string>
+    <string name="bluetooth_timeout_summary_30secs">30 saniye</string>
+    <string name="bluetooth_timeout_summary_1min">1 dakika</string>
+    <string name="bluetooth_timeout_summary_2mins">2 dakika</string>
     <string name="bluetooth_timeout_summary_5mins">5 dakika</string>
     <string name="bluetooth_timeout_summary_10mins">10 dakika</string>
     <string name="bluetooth_timeout_summary_30mins">30 dakika</string>
+    <string name="bluetooth_timeout_summary_1hour">1 saat</string>
+    <string name="bluetooth_timeout_summary_2hours">2 saat</string>
+    <string name="bluetooth_timeout_summary_4hours">4 saat</string>
+    <string name="bluetooth_timeout_summary_8hours">8 saat</string>
 </resources>
