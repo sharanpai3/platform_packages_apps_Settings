@@ -457,4 +457,19 @@
     <dimen name="icon_end_padding">15dp</dimen>
     <dimen name="text_top_padding">2.5dp</dimen>
     <dimen name="about_card_settings_height">70dp</dimen>
+
+    <dimen name="start_margin">110dp</dimen>
+    <dimen name="top_margin_random">10dp</dimen>
+    <dimen name="top_matrans_dimen">40dp</dimen>
+
+    <dimen name="op_control_margin_list_top2">12dp</dimen>
+    <dimen name="op_control_margin_space1">4dp</dimen>
+    <dimen name="op_control_margin_space7">40.0dip</dimen>
+    <dimen name="op_control_margin_screen_right3">20.0dip</dimen>
+    <dimen name="op_control_margin_screen_left3">20dp</dimen>
+    <dimen name="op_control_margin_space3">16.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom4">21.0dip</dimen>
+    <dimen name="op_control_margin_list_top4">21.0dip</dimen>
+    <dimen name="op_control_avatar_size3">33.0dip</dimen>
+    <dimen name="bottom_margin_12dp">12dp</dimen>
 </resources>
