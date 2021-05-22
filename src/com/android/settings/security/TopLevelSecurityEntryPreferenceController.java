@@ -47,22 +47,12 @@ public class TopLevelSecurityEntryPreferenceController extends BasePreferenceCon
         final AppLockManager appLockManager =
                 Utils.getAppLockManager(mContext);
         CharSequence summary = null;
-        if (faceManager != null && faceManager.isHardwareDetected()) {
-            summary = mContext.getText(R.string.security_dashboard_summary_face);
-        } else if (fpm != null && fpm.isHardwareDetected()) {
-            summary = mContext.getText(R.string.security_dashboard_summary);
-        } else {
-            summary = mContext.getText(R.string.security_dashboard_summary_no_fingerprint);
-        }
-        if (appLockManager == null) {
-            return summary;
-        } else {
         if (fpm != null && fpm.isHardwareDetected() && FaceUtils.isFaceUnlockSupported()) {
-            return mContext.getText(R.string.security_dashboard_summary_face_and_fingerprint);
+            summary = mContext.getText(R.string.security_dashboard_summary_face_and_fingerprint);
         } else if (fpm != null && fpm.isHardwareDetected()) {
             summary = mContext.getText(R.string.security_dashboard_summary);
         } else if (faceManager != null && faceManager.isHardwareDetected()) {
-            return mContext.getText(R.string.security_dashboard_summary_face);
+            summary = mContext.getText(R.string.security_dashboard_summary_face);
         } else {
             summary = mContext.getText(R.string.security_dashboard_summary_no_fingerprint);
         }
