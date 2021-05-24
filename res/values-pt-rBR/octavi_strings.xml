@@ -41,6 +41,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Octavi Lab -->
+    <string name="octavi_lab_dash_title">Octavi Lab</string>
     <string name="octavi_lab_summary">Customization Laboratory</string>
     <!-- Battery temp -->
     <string name="battery_temp_title">Battery temperature</string>
@@ -138,7 +139,7 @@
     <string name="volume_steps_ring_title">Volume steps: Ringer</string>
     <string name="volume_steps_system_title">Volume steps: System</string>
     <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
-    <string name="volume_steps_reset">Resetar</string>
+    <string name="volume_steps_reset">Redefinir</string>
     <!-- Running services toggle -->
     <string name="background_processes_settings_title">Background processes</string>
     <!-- Pocket judge -->
@@ -171,6 +172,7 @@
     <string name="pattern_da_dzzz_da">da-dzzz-da</string>
     <string name="pattern_custom">Custom</string>
     <string name="custom_vibration_pattern_title">Custom pattern</string>
+    <string name="custom_vibration_pattern_summary">Definir um padrão de vibração personalizado</string>
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
     <string name="increasing_ring_min_volume_title">Start volume</string>
@@ -185,7 +187,35 @@
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <string name="trademark">&#8482;</string>
     <!-- App Lock -->
+    <string name="applock_title">Bloqueador de aplicativo</string>
+    <string name="applock_locked">Bloqueado</string>
+    <string name="applock_unlocked">Desbloqueado</string>
+    <string name="applock_locked_apps">Aplicativos bloqueados</string>
+    <string name="applock_unlocked_apps">Aplicativos desbloqueados</string>
+    <string name="applock_lock_after_title">Bloquear aplicativo após</string>
+    <string name="applock_lock_after_instantly">Instantaneamente</string>
+    <string name="applock_lock_after_15_seconds">15 Seconds</string>
+    <string name="applock_lock_after_screen_off">Tela desligada</string>
+    <string name="applock_lock_after_summary">O aplicativo será bloqueado após tempo selecionado</string>
+    <string name="applock_lock_after_instantly_summary">O aplicativo será bloqueado instantaneamente quando fechado</string>
+    <string name="applock_lock_after_15_seconds_summary">O aplicativo será bloqueado 15 segundos após fechar</string>
+    <string name="applock_lock_after_screen_off_summary">O aplicativo será bloqueado quando a tela for desligada</string>
+    <string name="applock_notification_info">Você pode mostrar/ocultar o conteúdo da notificação por aplicativo, clicando no ícone de notificação mostrado na preferência de cada aplicativo bloqueado</string>
+    <string name="applock_show_notif">Mostrar o conteúdo das notificações</string>
+    <string name="applock_hide_notif">Ocultar o conteúdo das notificações</string>
+    <string name="applock_setup">Configurar o bloqueador de aplicativos</string>
+    <string name="applock_overlay_summary">Este recurso não está disponível porque este aplicativo está bloqueado</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 aplicativo bloqueado</item>
+        <item quantity="other">%d aplicativos bloqueados</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, bloqueio de apps, bloqueador de apps</string>
     <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Remover a verificação facial existente e criar uma nova verificação</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Refazer escaneamento facial</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Bloqueio da tela, impressão digital, desbloqueio facial</string>
+    <string name="face_redo_confirm_btn">Refazer</string>
+    <string name="face_redo_warning_msg">Deseja remover o escaneamento facial existente e criar um novo?</string>
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Allow network access</string>
     <string name="data_usage_app_restrict_all_summary">Enable network usage</string>
@@ -196,15 +226,40 @@
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
     <!-- global cleartext penalties -->
+    <string name="cleartext_network_policy_title">Restringir tráfego de rede cleartext</string>
+    <string name="cleartext_network_policy_summary">Bloqueia todo o tráfego de rede não-TLS. Requer configuração de DNS privado. Nota: Sem isenções explícitas, o Tor e a maioria das VPNs não funcionarão</string>
     <!--  screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">Desativar o Wi-Fi automaticamente</string>
     <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">O Wi-Fi será desativado após <xliff:g id="timeout_description">%1$s</xliff:g> se nenhuma rede estiver conectada</string>
     <string name="wifi_timeout_summary2">Desativado</string>
+    <string name="wifi_timeout_summary_never">Nunca</string>
+    <string name="wifi_timeout_summary_15secs">15 seconds</string>
+    <string name="wifi_timeout_summary_30secs">30 seconds</string>
+    <string name="wifi_timeout_summary_1min">1 minute</string>
+    <string name="wifi_timeout_summary_2mins">2 minutes</string>
     <string name="wifi_timeout_summary_5mins">5 minutos</string>
     <string name="wifi_timeout_summary_10mins">10 minutos</string>
     <string name="wifi_timeout_summary_30mins">30 minutos</string>
+    <string name="wifi_timeout_summary_1hour">1 hora</string>
+    <string name="wifi_timeout_summary_2hours">2 horas</string>
+    <string name="wifi_timeout_summary_4hours">4 horas</string>
+    <string name="wifi_timeout_summary_8hours">8 horas</string>
     <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">Tempo limite do Bluetooth</string>
     <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">O Bluetooth será desativado após <xliff:g id="timeout_description">%1$s</xliff:g> se nenhum dispositivo estiver conectado</string>
+    <string name="bluetooth_timeout_summary2">Não desative automaticamente o Bluetooth</string>
+    <string name="bluetooth_timeout_summary_never">Nunca</string>
+    <string name="bluetooth_timeout_summary_15secs">15 seconds</string>
+    <string name="bluetooth_timeout_summary_30secs">30 seconds</string>
+    <string name="bluetooth_timeout_summary_1min">1 minute</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minutes</string>
     <string name="bluetooth_timeout_summary_5mins">5 minutos</string>
     <string name="bluetooth_timeout_summary_10mins">10 minutos</string>
     <string name="bluetooth_timeout_summary_30mins">30 minutos</string>
+    <string name="bluetooth_timeout_summary_1hour">1 hora</string>
+    <string name="bluetooth_timeout_summary_2hours">2 horas</string>
+    <string name="bluetooth_timeout_summary_4hours">4 horas</string>
+    <string name="bluetooth_timeout_summary_8hours">8 horas</string>
 </resources>
