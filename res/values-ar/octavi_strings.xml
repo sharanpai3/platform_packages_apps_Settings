@@ -51,6 +51,7 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">صوت لقطة الشاشة</string>
     <!-- Clock style -->
+    <string name="clock_style_title">نمط الساعة</string>
     <string name="clock_style_summary">تخصيص ساعة شاشة القفل</string>
     <!-- Battery health -->
     <string name="battery_health_title">صحة البطارية</string>
@@ -64,6 +65,7 @@
     <string name="display_cutout_force_fullscreen_title">تطبيقات تملأ الشاشة</string>
     <string name="display_cutout_force_fullscreen_summary">فرض التطبيقات على تجاهل مكان قطع الشاشة</string>
     <!-- Advanced powermenu -->
+    <string name="global_actions_title">قـائمة التشغيل</string>
     <!-- Custom light color -->
     <string name="custom_light_title">لون الضوء</string>
     <string name="custom_light_on_time_title">وقت تشغيل الضوء أثناء نبض الليد (مث)</string>
@@ -78,6 +80,7 @@
     <!-- Misc gesture settings -->
     <string name="back_gesture_haptic_title">الإستجابة الإهتزازية</string>
     <string name="back_gesture_haptic_summary">تفعيل الإهتزاز عند إيماء الرجوع</string>
+    <string name="weather_title">الطقس</string>
     <!-- Navbar length -->
     <string name="navbar_length">طول شريط الإيماء</string>
     <string name="hidden_label">خفي</string>
@@ -106,7 +109,9 @@
     <string name="adaptive_playback_timeout_1_min_summary">مشغل (دقيقة)</string>
     <string name="adaptive_playback_timeout_2_min">دقيقتان</string>
     <string name="adaptive_playback_timeout_2_min_summary">مشغل (دقيقتان)</string>
+    <string name="adaptive_playback_timeout_5_min">5 دقائق</string>
     <string name="adaptive_playback_timeout_5_min_summary">مشغل (5 دقائق)</string>
+    <string name="adaptive_playback_timeout_10_min">10 دقائق</string>
     <string name="adaptive_playback_timeout_10_min_summary">مشغل (10 دقائق)</string>
     <string name="adaptive_playback_explainer">التشغيل التأقلمي سوف يوقف الوسائط تلقائياً عندما يُكتم الصوت و سوف يستأنف التشغيل عندما يعود الصوت ضمن الوقت المحدد.</string>
     <!-- Back gesture height -->
@@ -134,6 +139,7 @@
     <string name="volume_steps_ring_title">درجات الصوت: الرنين</string>
     <string name="volume_steps_system_title">درجات الصوت: النظام</string>
     <string name="volume_steps_voice_call_title">درجات الصوت: صوت المكالمة</string>
+    <string name="volume_steps_reset">إعادة تعيين</string>
     <!-- Running services toggle -->
     <string name="background_processes_settings_title">العمليات الخلفية</string>
     <!-- Pocket judge -->
@@ -166,6 +172,7 @@
     <string name="pattern_da_dzzz_da">da-dzzz-da</string>
     <string name="pattern_custom">مخصص</string>
     <string name="custom_vibration_pattern_title">نمط مخصص</string>
+    <string name="custom_vibration_pattern_summary">تحديد نمط إهتزاز مخصص</string>
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">تزايد صوت الرنين</string>
     <string name="increasing_ring_min_volume_title">مستوى صوت البدء</string>
@@ -180,7 +187,39 @@
     <string name="incall_vibrate_disconnect_title">الإهتزاز عند قطع الإتصال</string>
     <string name="trademark">&#8482;</string>
     <!-- App Lock -->
+    <string name="applock_title">قافل التطبيقات</string>
+    <string name="applock_locked">مقفل</string>
+    <string name="applock_unlocked">مفتوح</string>
+    <string name="applock_locked_apps">التطبيقات المقفلة</string>
+    <string name="applock_unlocked_apps">التطبيقات المفتوحة</string>
+    <string name="applock_lock_after_title">قفل التطبيق بعد</string>
+    <string name="applock_lock_after_instantly">مباشرة</string>
+    <string name="applock_lock_after_15_seconds">15 ثانية</string>
+    <string name="applock_lock_after_screen_off">إطفاء الشاشة</string>
+    <string name="applock_lock_after_summary">سيتم قفل التطبيق بعد المهلة المحددة</string>
+    <string name="applock_lock_after_instantly_summary">سيتم قفل التطبيق مباشرةً عند إغلاقه</string>
+    <string name="applock_lock_after_15_seconds_summary">سيتم قفل التطبيق بعد 15 ثانية من الإغلاق</string>
+    <string name="applock_lock_after_screen_off_summary">سيتم قفل التطبيق بعد إطفاء الشاشة</string>
+    <string name="applock_notification_info">يمكن إظهار/إخفاء محتوى الإشعارات بحسب كل تطبيق على حدى من خلال الضغط على أيقونة الإشعارات الظاهرة على إعدادات التطبيقات المقفلة</string>
+    <string name="applock_show_notif">إظهار محتوى الإشعارات</string>
+    <string name="applock_hide_notif">إخفاء محتوى الإشعارات</string>
+    <string name="applock_setup">إعداد قافل التطبيقات</string>
+    <string name="applock_overlay_summary">هذه الخدمة عير متاحة لأن التطبيق مقفل</string>
+    <plurals name="applock_summary">
+        <item quantity="zero">تم قفل %d تطبيقات</item>
+        <item quantity="one">تطبيق مقفول</item>
+        <item quantity="two">%d تطبيقات مقفولة</item>
+        <item quantity="few">تم قفل %d تطبيقات</item>
+        <item quantity="many">تم قفل %d تطبيقات</item>
+        <item quantity="other">تم قفل %d تطبيقات</item>
+    </plurals>
+    <string name="keywords_applock_settings">قفل التطبيق, قافل التطبيقات, قفل التطبيق, قافل التطبيقات</string>
     <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">إزالة مسحة الوجه الموجودة و إنشاء مسحة جديدة</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">إعادة مسحة الوجه</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">قفل الشاشة, بصمة الإصبع, فك القفل بالوجه</string>
+    <string name="face_redo_confirm_btn">إعادة</string>
+    <string name="face_redo_warning_msg">هل تريد إزالة مسحة الوجه الموجودة و إنشاء مسحة جديدة؟</string>
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">السماح بالوصول للشبكة</string>
     <string name="data_usage_app_restrict_all_summary">تفعيل إستخدام الشبكة</string>
@@ -191,8 +230,34 @@
     <string name="data_usage_app_restrict_wifi">بيانات ال واي\u2011فاي</string>
     <string name="data_usage_app_restrict_wifi_summary">تفعيل إستخدام بيانات الواي\u2011فاي</string>
     <!-- global cleartext penalties -->
+    <string name="cleartext_network_policy_title">تقييد نص إستخدام الشبكة</string>
+    <string name="cleartext_network_policy_summary">حجب جميع معلومات الشبكة غير TLS. يتطلب تكوين DNS الخاص. ملاحظة: بدون إستثناءات صريحة، لن يعمل Tor ومعظم شبكات VPN</string>
     <!--  screen, setting option name to change wifi timeout -->
+    <string name="wifi_timeout">إيقاف تشغيل Wi-Fi تلقائياً</string>
     <!--  screen, setting option summary to change wifi timeout -->
+    <string name="wifi_timeout_summary">سيتم إيقاف تشغيل Wi-Fi بعد <xliff:g id="timeout_description">%1$s</xliff:g> إذا لم تكن الشبكة متصلة</string>
+    <string name="wifi_timeout_summary2">معطل</string>
+    <string name="wifi_timeout_summary_never">أبداً</string>
+    <string name="wifi_timeout_summary_15secs">15 ثانية</string>
+    <string name="wifi_timeout_summary_30secs">30 ثانية</string>
+    <string name="wifi_timeout_summary_1min">دقيقة</string>
+    <string name="wifi_timeout_summary_2mins">دقيقتان</string>
+    <string name="wifi_timeout_summary_1hour">ساعة</string>
+    <string name="wifi_timeout_summary_2hours">ساعتان</string>
+    <string name="wifi_timeout_summary_4hours">4 ساعات</string>
+    <string name="wifi_timeout_summary_8hours">8 ساعات</string>
     <!-- Connected devices screen, setting option name to change bluetooth timeout -->
+    <string name="bluetooth_timeout">مهلة البلوتوث</string>
     <!-- Connected devices screen, setting option summary to change bluetooth timeout -->
+    <string name="bluetooth_timeout_summary">سيتم إيقاف تشغيل البلوتوث بعد <xliff:g id="timeout_description">%1$s</xliff:g> إذا لم يكن هناك جهاز متصل</string>
+    <string name="bluetooth_timeout_summary2">عدم إطفاء البلوتوث تلقائياً</string>
+    <string name="bluetooth_timeout_summary_never">أبداً</string>
+    <string name="bluetooth_timeout_summary_15secs">15 ثانية</string>
+    <string name="bluetooth_timeout_summary_30secs">30 ثانية</string>
+    <string name="bluetooth_timeout_summary_1min">دقيقة</string>
+    <string name="bluetooth_timeout_summary_2mins">دقيقة</string>
+    <string name="bluetooth_timeout_summary_1hour">ساعة</string>
+    <string name="bluetooth_timeout_summary_2hours">ساعتان</string>
+    <string name="bluetooth_timeout_summary_4hours">4 ساعات</string>
+    <string name="bluetooth_timeout_summary_8hours">8 ساعات</string>
 </resources>
