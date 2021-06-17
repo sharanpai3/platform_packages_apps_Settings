@@ -445,4 +445,12 @@
     <string name="legacy_wfd_video_mode_1080p_30fps">1080p 30fps</string>
     <string name="legacy_wfd_video_mode_1080p_60fps">1080p 60fps</string>
 
+    <!-- categories -->
+    <string name="display_screen_category">Screen</string>
+    <string name="display_customisation_title">Display Customisation</string>
+    <string name="display_wake_title">Wake Options</string>
+    <string name="display_brightness_title">Brightness Options</string>
+    <string name="volume_adjustment_category_title">Volume Adjustments</string>
+    <string name="ringtone_category_title">Ringtone</string>
+    <string name="vibrations_category_title">Vibrations and Silence</string>
 </resources>
