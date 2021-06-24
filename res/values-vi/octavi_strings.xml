@@ -64,8 +64,6 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Ứng dụng toàn màn hình</string>
     <string name="display_cutout_force_fullscreen_summary">Buộc các ứng dụng bỏ qua tai thỏ</string>
-    <!-- Advanced powermenu -->
-    <string name="global_actions_title">Menu nguồn</string>
     <!-- Custom light color -->
     <string name="custom_light_title">Màu đèn LED</string>
     <string name="custom_light_on_time_title">Thời gian sáng đèn khi nhấp nháy (ms)</string>
@@ -261,4 +259,53 @@
     <string name="bluetooth_timeout_summary_2hours">2 giờ</string>
     <string name="bluetooth_timeout_summary_4hours">4 giờ</string>
     <string name="bluetooth_timeout_summary_8hours">8 giờ</string>
+    <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Bỏ qua bản nhạc</string>
+    <string name="volume_skiptrack_title">Âm lượng rocker bỏ qua bài hát</string>
+    <string name="volume_skiptrack_summary">Nhấn và giữ nút chỉnh âm lượng để bỏ qua các bản nhạc khi phát nhạc, thậm chí từ xa trên tv hoặc PC với ví dụ: Spotify (ứng dụng phải chạy trên điện thoại và hiển thị thông báo).</string>
+    <string name="ambient_wake_gestures_title">Cử chỉ đánh thức môi trường xung quanh</string>
+    <string name="ambient_wake_gestures_summary">Hiển thị tính năng Hiển thị nhanh thay cho màn hình khoá bình thường khi sử dụng vuốt đánh thức.</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Không có hành động nào</string>
+    <string name="action_search">Trợ lý</string>
+    <string name="action_voice_search">Tìm kiếm bằng giọng nói</string>
+    <string name="action_launch_camera">Máy ảnh</string>
+    <string name="action_flashlight">Đèn pin</string>
+    <string name="action_volume_panel">Bảng điều chỉnh âm lượng</string>
+    <string name="action_screen_off">Tắt màn hình</string>
+    <string name="action_screenshot">Ảnh chụp màn hình</string>
+    <string name="action_app_action">Ứng dụng</string>
+    <string name="active_edge_ss_app_select_title">Chọn ứng dụng bóp ngắn</string>
+    <string name="active_edge_ls_app_select_title">Chọn ứng dụng bóp dài</string>
+    <string name="active_edge_app_select_summary">Chọn một ứng dụng để khởi động với hành động ép</string>
+    <string name="action_qs_panel">Bảng cài đặt nhanh</string>
+    <string name="action_notifications">Thông báo</string>
+    <string name="action_clear_notifications">Xóa thông báo</string>
+    <string name="action_ringer_modes">Chế độ chuông</string>
+    <string name="kill_app">Xoá ứng dụng dưới nền</string>
+    <string name="skip_song">Bỏ qua bài hát</string>
+    <string name="prev_song">Bài trước</string>
+    <string name="show_powermenu">Hiển thị Menu nguồn</string>
+    <string name="partial_screenshot">Ảnh chụp một phần màn hình</string>
+    <string name="hush_mute">Xóa thông báo</string>
+    <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Cử chỉ nâng cao</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Tùy chỉnh cử chỉ và thiết lập hành động tùy chỉnh</string>
+    <string name="navbar_gesture_tweaks_cat_title">Nâng cao</string>
+    <string name="long_back_swipe_timeout_title">Hành động vuốt dài hết thời gian chờ</string>
+    <string name="left_swipe_actions_title">Thao tác vuốt dài sang trái</string>
+    <string name="left_swipe_app_action_title">Chọn ứng dụng vuốt dài sang trái</string>
+    <string name="right_swipe_actions_title">Thao tác vuốt dài phải</string>
+    <string name="right_swipe_app_action_title">Chọn ứng dụng vuốt giữ bên phải</string>
+    <string name="left_vertical_swipe_actions_title">Thao tác vuốt dọc trái</string>
+    <string name="left_vertical_swipe_app_action_title">Chọn ứng dụng vuốt bên trái</string>
+    <string name="right_vertical_swipe_actions_title">Thao tác vuốt dọc phải</string>
+    <string name="right_vertical_swipe_app_action_title">Chọn ứng dụng vuốt bên phải</string>
+    <string name="gesture_nav_tweaks_footer_info">Để chọn một hoạt động của ứng dụng cụ thể cho một hành động, nhấn giữ một ứng dụng bất kì trong bộ chọn ứng dụng.\n\nNếu trình khởi chạy đang được hiển thị, hãy vuốt lên từ khu vực phía dưới màn hình để thực hiện hành động.</string>
+    <string name="back_swipe_extended_title">Hành động vuốt mở rộng</string>
+    <string name="back_swipe_extended_summary">Hành động kích hoạt khi vuốt rộng hơn (hơn một nửa kích thước hiển thị) hoặc vuốt L (đủ dài hơn theo chiều dọc)</string>
+    <!-- Power Button Fingerprint -->
+    <string name="fingerprint_power_button_press_title">Nhấn để mở khoá</string>
+    <string name="fingerprint_power_button_press_off_summary">Chạm vào nút nguồn để mở khóa bằng vân tay khi màn hình tắt</string>
+    <string name="fingerprint_power_button_press_on_summary">Nhấn nút nguồn để mở khóa bằng vân tay khi màn hình tắt</string>
 </resources>
