@@ -64,8 +64,6 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikasi layar penuh</string>
     <string name="display_cutout_force_fullscreen_summary">Paksa aplikasi untuk mengabaikan jarak notch</string>
-    <!-- Advanced powermenu -->
-    <string name="global_actions_title">Menu Daya</string>
     <!-- Custom light color -->
     <string name="custom_light_title">Warna lampu</string>
     <string name="custom_light_on_time_title">Durasi lampu aktif selama led berkedip (ms)</string>
@@ -261,4 +259,53 @@
     <string name="bluetooth_timeout_summary_2hours">2 jam</string>
     <string name="bluetooth_timeout_summary_4hours">4 jam</string>
     <string name="bluetooth_timeout_summary_8hours">8 jam</string>
+    <!-- Volume rocker gestures -->
+    <string name="volume_skiptrack_screen_title">Lewati trek lagu</string>
+    <string name="volume_skiptrack_title">Tombol volume untuk lewati trek</string>
+    <string name="volume_skiptrack_summary">Tekan lama tombol volume untuk melewati trek saat memutar musik, bahkan dari jarak jauh di TV atau PC dengan mis. Spotify (aplikasi harus dijalankan di telepon dan menunjukkan pemberitahuan).</string>
+    <string name="ambient_wake_gestures_title">Gestur bangun ambien</string>
+    <string name="ambient_wake_gestures_summary">Tampilkan Tampilan Ambien sebagai ganti dari layar kunci normal pada gestur bangun</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Tidak ada tindakan</string>
+    <string name="action_search">Asisten</string>
+    <string name="action_voice_search">Pencarian suara</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_flashlight">Senter</string>
+    <string name="action_volume_panel">Panel volume</string>
+    <string name="action_screen_off">Layar mati</string>
+    <string name="action_screenshot">Tangkapan Layar</string>
+    <string name="action_app_action">Aplikasi</string>
+    <string name="active_edge_ss_app_select_title">Pilih aplikasi tekan pendek</string>
+    <string name="active_edge_ls_app_select_title">Pilih aplikasi tekan panjang</string>
+    <string name="active_edge_app_select_summary">Pilih aplikasi untuk memulai dengan tindakan tekan</string>
+    <string name="action_qs_panel">Panel QS</string>
+    <string name="action_notifications">Notifikasi</string>
+    <string name="action_clear_notifications">Bersihkan notifikasi</string>
+    <string name="action_ringer_modes">Mode dering</string>
+    <string name="kill_app">Tutup paksa aplikasi saat ini</string>
+    <string name="skip_song">Lewati lagu</string>
+    <string name="prev_song">Lagu sebelumnya</string>
+    <string name="show_powermenu">Tampilkan Menu Daya</string>
+    <string name="partial_screenshot">Tangkapan Layar sebagian</string>
+    <string name="hush_mute">Pemberitahuan senyap</string>
+    <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Gestur tingkat lanjut</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Kustomisasi gestur dan atur tindakan khusus</string>
+    <string name="navbar_gesture_tweaks_cat_title">Lanjutan</string>
+    <string name="long_back_swipe_timeout_title">Batas waktu usap panjang</string>
+    <string name="left_swipe_actions_title">Tindakan usap panjang ke kiri</string>
+    <string name="left_swipe_app_action_title">Pilih aplikasi usap panjang ke kiri</string>
+    <string name="right_swipe_actions_title">Tindakan usap panjang ke kanan</string>
+    <string name="right_swipe_app_action_title">Pilih aplikasi usap panjang ke kanan</string>
+    <string name="left_vertical_swipe_actions_title">Tindakan usap ke kiri vertikal</string>
+    <string name="left_vertical_swipe_app_action_title">Pilih aplikasi usap ke kiri vertikal</string>
+    <string name="right_vertical_swipe_actions_title">Tindakan usap ke kanan vertikal</string>
+    <string name="right_vertical_swipe_app_action_title">Pilih aplikasi usap ke kanan vertikal</string>
+    <string name="gesture_nav_tweaks_footer_info">Untuk memilih aktivitas aplikasi tertentu untuk tindakan, tekan lama pada aplikasi apa pun di pemilih aplikasi.\n\nJika peluncur ditampilkan, lakukan gesek di bagian paling bawah layar untuk memicu tindakan.</string>
+    <string name="back_swipe_extended_title">Tindakan menggesek yang diperpanjang</string>
+    <string name="back_swipe_extended_summary">Tindakan pemicu pada gesekan yang lebih luas (lebih dari setengah ukuran tampilan), atau gesekan L (cukup panjang secara vertikal)</string>
+    <!-- Power Button Fingerprint -->
+    <string name="fingerprint_power_button_press_title">Tekan untuk membuka</string>
+    <string name="fingerprint_power_button_press_off_summary">Sentuh tombol daya untuk membuka kunci dengan sidik jari saat layar mati</string>
+    <string name="fingerprint_power_button_press_on_summary">Tekan tombol daya dengan kuat untuk membuka kunci dengan sidik jari saat layar mati</string>
 </resources>
