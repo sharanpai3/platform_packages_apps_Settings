@@ -118,7 +118,7 @@ public class TopLevelBatteryPreferenceController extends BasePreferenceControlle
         } else if (info.remainingLabel == null) {
             label = info.batteryPercentString;
         } else {
-            label = context.getString(R.string.power_remaining_settings_home_page,
+            label = mContext.getString(R.string.power_remaining_settings_home_page,
                     info.batteryPercentString,
                     info.remainingLabel);
         }
