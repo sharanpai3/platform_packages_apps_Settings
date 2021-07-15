@@ -524,6 +524,18 @@ public final class PhoneData {
 		        "108MP+12MP+8MP+20MP+2MP, 32MP",
 		        R.drawable.tucana
 	       ));
+               //RMX1851
+               data.add(new AboutPhoneData(53,
+			"RMX1851",
+			"2 x 2.2 GHz, 6 x 1.7 GHz",
+			"Snapdragon 710",
+			"4045",
+			"1080 x 2340, 6.3 inches",
+			"16MP + 5MP, 25MP",
+                        R.drawable.RMX1851
+               ));
+
+
 }
     public static List<AboutPhoneData> getData() {
 	return data;
