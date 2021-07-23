@@ -3538,5 +3538,10 @@
             </intent-filter>/>
         </receiver>
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- So why not make it longer and add Carbon Features? -->
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="com.octavi.lab.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
+
     </application>
 </manifest>
