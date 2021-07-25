@@ -109,6 +109,7 @@ import com.android.settings.language.LanguageAndInputSettings;
 import com.android.settings.localepicker.LocaleListEditor;
 import com.android.settings.location.LocationSettings;
 import com.android.settings.location.ScanningSettings;
+import com.android.settings.livedisplay.LiveDisplaySettings;
 import com.android.settings.network.ApnEditor;
 import com.android.settings.network.ApnSettings;
 import com.android.settings.network.MobileNetworkListFragment;
@@ -318,7 +319,8 @@ public class SettingsGateway {
             OctaviLab.class.getName(),
             OmniJawsSettings.class.getName(),
             RunningServices.class.getName(),
-            GamingMode.class.getName()
+            GamingMode.class.getName(),
+            LiveDisplaySettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
