@@ -308,4 +308,18 @@
     <string name="fingerprint_power_button_press_title">Nhấn để mở khoá</string>
     <string name="fingerprint_power_button_press_off_summary">Chạm vào nút nguồn để mở khóa bằng vân tay khi màn hình tắt</string>
     <string name="fingerprint_power_button_press_on_summary">Nhấn nút nguồn để mở khóa bằng vân tay khi màn hình tắt</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Phông chữ</string>
+    <string name="disable_fonts_installed_title">Trình chọn phông chữ không hoạt động do xung đột với Substratum. Xóa nó nếu bạn muốn chọn phông chữ.</string>
+    <string name="font_picker_progress">Áp dụng phông chữ mới\u2026</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_method_title">Cho phép Mở khoá bằng Khuôn mặt trên Màn hình khóa</string>
+    <string name="face_unlock_method_default">Khi màn hình được bật</string>
+    <string name="face_unlock_method_swipe">Khi vuốt trên màn hình khóa</string>
+    <!-- Legacy WFD settings -->
+    <string name="legacy_wfd_video_mode_title">Chế độ video</string>
+    <string name="legacy_wfd_video_mode_720p_30fps">720p 30fps</string>
+    <string name="legacy_wfd_video_mode_720p_60fps">720p 60fps</string>
+    <string name="legacy_wfd_video_mode_1080p_30fps">1080p 30fps</string>
+    <string name="legacy_wfd_video_mode_1080p_60fps">1080p 60fps</string>
 </resources>
