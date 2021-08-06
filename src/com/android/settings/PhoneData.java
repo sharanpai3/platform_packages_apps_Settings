@@ -128,7 +128,7 @@ public final class PhoneData {
                 ));
 		//le_x2
         	data.add(new AboutPhoneData(14,
-	                "le_x2"
+	                "le_x2",
                 	"2 x 2.15GHz, 2 x 1.6Ghz",
         	        "Snapdragon 820",
 		        "3200",
