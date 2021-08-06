@@ -22,5 +22,13 @@
     settings:keywords="@string/keywords_android_version">
 
     <!-- <Preference android:layout="@layout/about_header_wave" /> -->
-    <com.android.settings.OosAboutPreference/>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="pref_layout_octavi_about"
+        android:layout="@layout/oos_about"
+        settings:controller="com.android.settings.OosAboutPreference"
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false"
+        settings:iconSpaceReserved="false"/>
+    <!-- <com.android.settings.OosAboutPreference/> -->
 </PreferenceScreen>

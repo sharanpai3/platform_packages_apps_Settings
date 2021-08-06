@@ -30,28 +30,31 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
+import com.android.settings.core.BasePreferenceController;
+import androidx.preference.PreferenceScreen;
+import com.android.settingslib.widget.LayoutPreference;
 
-public class OosAboutPreference extends Preference implements View.OnTouchListener {
+public class OosAboutPreference extends BasePreferenceController implements View.OnTouchListener {
 
     Context context;
     List<AboutPhoneData> data = PhoneData.getData();
 
-    public OosAboutPreference(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        setLayoutResource(R.layout.oos_about);
+    public OosAboutPreference(Context context, String key) {
+        super(context, key);
         this.context = context;
     }
 
-    public OosAboutPreference(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        setLayoutResource(R.layout.oos_about);
-        this.context = context;
+    @Override
+    public int getAvailabilityStatus() {
+        return AVAILABLE;
     }
 
-    public OosAboutPreference(Context context) {
-        super(context);
-        setLayoutResource(R.layout.oos_about);
-        this.context = context;
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        LayoutPreference mPreference = screen.findPreference("pref_layout_octavi_about");
+	onBindItems(mPreference.findViewById(R.id.oos_about_root));
     }
 
     private static int findIndex(
@@ -74,9 +77,7 @@ public class OosAboutPreference extends Preference implements View.OnTouchListen
         }
     }
 
-    @Override
-    public void onBindViewHolder(PreferenceViewHolder holder) {
-        super.onBindViewHolder(holder);
+    public void onBindItems(View holder) {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getAbsolutePath());
         final double totalInt = (statFs.getBlockSizeLong() * statFs.getBlockCountLong() / Math.pow(1024, 3));
         int total = 0;
@@ -93,8 +94,8 @@ public class OosAboutPreference extends Preference implements View.OnTouchListen
         else if (totalInt > 256 && totalInt < 513)
             total = 512;
 
-        View root = holder.itemView;
-        int index = findIndex(SystemProperties.get("ro.product.device").toLowerCase());
+        View root = holder;
+        int index = findIndex(SystemProperties.get("ro.product.device"));
 
         TextView display = null, cpu = null, battery = null, soc = null, cam = null, img = null,
                 device, deviceSec, octaviVer, octaviStatus,
