@@ -97,7 +97,7 @@ public class OosAboutPreference extends BasePreferenceController implements View
         View root = holder;
         int index = findIndex(SystemProperties.get("ro.product.device"));
 
-        TextView display = null, cpu = null, battery = null, soc = null, cam = null, img = null,
+        TextView display = null, cpu = null, battery = null, soc = null, cam = null,
                 device, deviceSec, octaviVer, octaviStatus,
                 kernel, maintainer, rom;
 
@@ -114,25 +114,20 @@ public class OosAboutPreference extends BasePreferenceController implements View
         octaviVer = root.findViewById(R.id.octaviVer);
 	octaviStatus = root.findViewById(R.id.octaviStatus);
 
-        TextView[] var = {display, cpu, battery, soc, cam, img};
+        TextView[] var = {display, cpu, battery, soc, cam};
         int[] ids = {R.id.display_about, R.id.cpu_about, R.id.battery_about, R.id.soc_about, R.id.camera_about, R.id.device_about};
         final String[] texts = {
                 data.get(index).getDisplay(), data.get(index).getCpu(),
                 data.get(index).getBattery(), data.get(index).getSoc(),
-                data.get(index).getCamera(), String.valueOf(data.get(index).getImg()),
         };
 
         for (int i = 0; i < var.length; i++) {
             var[i] = root.findViewById(ids[i]);
-            if (var[i]!=null && texts[i]!=null && var[i].getId() == R.id.device_about && !texts[i].equals("0")) {
-                var[i].setBackground(ContextCompat.getDrawable(context, Integer.parseInt(texts[i])));
-            } else {
                 if (var[i].getId() == R.id.camera_about && texts[i].length() > 16)
                     var[i].setTextSize(12);
                 if (!texts[i].equals("0"))
                     var[i].setText(texts[i]);
 		else var[i].setText(texts[0]);
-            }
         }
 
 	octaviStatus.setText(String.format(" OctaviOS %s", SystemProperties.get("ro.octavi.branding.version")));

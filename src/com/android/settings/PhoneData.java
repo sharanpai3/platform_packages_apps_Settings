@@ -26,8 +26,7 @@ public final class PhoneData {
 			"Snapdragon 636",
 			"4000",
 			"2160 x 1080, 5.9 inches",
-			"12MP + 5MP + 20MP",
-			R.drawable.whyred
+			"12MP + 5MP + 20MP"
 		));
 		//RMX1921
 		data.add(new AboutPhoneData(3,
@@ -36,8 +35,7 @@ public final class PhoneData {
 			"Snapdragon 712",
 			"4000",
 			"1080 x 2340, 6.4 inches",
-			"64MP + 8MP + 2MP + 2MP",
-			R.drawable.rmx1921
+			"64MP + 8MP + 2MP + 2MP"
 		));
 		//Phoenix
 		data.add(new AboutPhoneData(4,
@@ -46,8 +44,7 @@ public final class PhoneData {
 			"Snapdragon 730G",
 			"4500",
 			"1080 x 2400, 6.67 inches",
-			"64MP + 8MP + 2MP + 2MP",
-			R.drawable.phoenix
+			"64MP + 8MP + 2MP + 2MP"
 		));
 		//Violet
 		data.add(new AboutPhoneData(5,
@@ -56,8 +53,7 @@ public final class PhoneData {
 			"Snapdragon 675",
 			"4000",
 			"1080 x 2340, 6.3 inches",
-			"48MP + 5MP + 13MP",
-			R.drawable.violet
+			"48MP + 5MP + 13MP"
 		));
 		//X01BD
 		data.add(new AboutPhoneData(6,
@@ -66,8 +62,7 @@ public final class PhoneData {
 			"Snapdragon 660",
 			"5000",
 			"2280 x 1080, 6.26 inches",
-			"12MP + 5MP + 13MP",
-			R.drawable.x01bd
+			"12MP + 5MP + 13MP"
 		));
 		//CPH1859
 		data.add(new AboutPhoneData(7,
@@ -76,8 +71,7 @@ public final class PhoneData {
 			"Mediatek Helio p60",
 			"3450",
 			"1080 x 2160, 5.99 inches",
-			"13MP + 5MP",
-			R.drawable.cph1859
+			"13MP + 5MP"
 		));
 		//Vince
 		data.add(new AboutPhoneData(8,
@@ -86,8 +80,7 @@ public final class PhoneData {
 			"Snapdragon 625",
 			"4000",
 			"1080 x 2160, 5.99 inches",
-			"12MP + 5MP",
-			R.drawable.vince
+			"12MP + 5MP"
 		));
 		//RMX1901
 		data.add(new AboutPhoneData(9,
@@ -96,8 +89,7 @@ public final class PhoneData {
 			"Snapdragon 710",
 			"3760",
 			"1080 x 2340, 6.53 inches",
-			"48MP + 5MP AI ",
-			R.drawable.rmx1901
+			"48MP + 5MP AI "
 		));
 		//Begonia
 		data.add(new AboutPhoneData(10,
@@ -106,8 +98,7 @@ public final class PhoneData {
 			"Helio G90T",
 			"4500",
 			"1080 x 2340, 6,53 inches",
-			"64MP+20MP",
-			R.drawable.begonia
+			"64MP+20MP"
 		));
 		//RMX1801
 		data.add(new AboutPhoneData(11,
@@ -116,8 +107,7 @@ public final class PhoneData {
 			"Snapdragon 660",
 			"3500",
 			"1080 x 2340, 6.3 inches",
-			"16MP + 2MP , 16MP ",
-			R.drawable.rmx1801
+			"16MP + 2MP , 16MP "
 		));
 		//RMX1831
 		data.add(new AboutPhoneData(12,
@@ -126,8 +116,7 @@ public final class PhoneData {
 			"Mediatek Helio P70",
 			"3500",
 			"1080 x 2340, 6,3 inches",
-			"13MP+2MP, 16MP",
-			R.drawable.rmx1831
+			"13MP+2MP, 16MP"
 		));
 		//sanders
 		data.add(new AboutPhoneData(13,
@@ -136,8 +125,7 @@ public final class PhoneData {
 			"Snapdragon 625",
 			"3050",
 			"2160 x 1440, 5.5 inches",
-			"13MP + 13MP",
-			R.drawable.sanders
+			"13MP + 13MP"
 		));
 		//beryllium
 		data.add(new AboutPhoneData(14,
@@ -146,8 +134,7 @@ public final class PhoneData {
 			"Snapdragon 845",
 			"4000",
 			"1080 x 2246, 6.18 inches",
-			"12MP + 5MP + 20MP",
-			R.drawable.beryllium
+			"12MP + 5MP + 20MP"
 		));
 		//Phoenixin
 		data.add(new AboutPhoneData(15,
@@ -156,8 +143,7 @@ public final class PhoneData {
 			"Snapdragon 730G",
 			"4500",
 			"1080 x 2400, 6.67 inches",
-			"64MP + 8MP + 2MP + 2MP",
-			R.drawable.phoenix
+			"64MP + 8MP + 2MP + 2MP"
 		));
 		//X2
 		data.add(new AboutPhoneData(16,
@@ -166,8 +152,7 @@ public final class PhoneData {
 			"Snapdragon 730G",
 			"4000",
 			"1080 x 2340, 6.4 inches",
-			"64MP + 8MP + 2MP + 2MP",
-			R.drawable.X2
+			"64MP + 8MP + 2MP + 2MP"
 		));
 		//daisy
 		data.add(new AboutPhoneData(17,
@@ -176,8 +161,7 @@ public final class PhoneData {
 			"Snapdragon 625",
 			"4000",
 			"1080 x 2280, 5.84 inches",
-			"12MP + 5MP, 5MP",
-			R.drawable.daisy
+			"12MP + 5MP, 5MP"
 		));
 		//miatoll
 		data.add(new AboutPhoneData(18,
@@ -186,8 +170,7 @@ public final class PhoneData {
 			"Snapdragon 720G",
 			"5000",
 			"2400 x 1080, 6.67 inches",
-			"48MP + 8MP + 5MP + 2MP",
-			R.drawable.miatoll
+			"48MP + 8MP + 5MP + 2MP"
 		));
 		data.add(new AboutPhoneData(19,
 			"curtana",
@@ -195,8 +178,7 @@ public final class PhoneData {
 			"Snapdragon 720G",
 			"5020",
 			"2400 x 1080, 6.67 inches",
-			"48MP + 8MP + 5MP + 2MP",
-			R.drawable.miatoll
+			"48MP + 8MP + 5MP + 2MP"
 		));
 		data.add(new AboutPhoneData(20,
 			"excalibur",
@@ -204,8 +186,7 @@ public final class PhoneData {
 			"Snapdragon 720G",
 			"5020",
 			"2400 x 1080, 6.67 inches",
-			"64MP + 8MP + 5MP + 2MP",
-			R.drawable.miatoll
+			"64MP + 8MP + 5MP + 2MP"
 		));
 		data.add(new AboutPhoneData(21,
 			"joyeuse",
@@ -213,8 +194,7 @@ public final class PhoneData {
 			"Snapdragon 720G",
 			"5020",
 			"2400 x 1080, 6.67 inches",
-			"48MP + 8MP + 5MP + 2MP",
-			R.drawable.miatoll
+			"48MP + 8MP + 5MP + 2MP"
 		));
 		//lavender
 		data.add(new AboutPhoneData(22,
@@ -223,8 +203,7 @@ public final class PhoneData {
 			"Snapdragon 660",
 			"4000",
 			"1080 x 2340, 6.3 inches",
-			"48MP + 5MP + 13MP",
-			R.drawable.lavender
+			"48MP + 5MP + 13MP"
 		));
 		//RMX2001
 		data.add(new AboutPhoneData(23,
@@ -233,8 +212,7 @@ public final class PhoneData {
 			"Mediatek Helio G90T",
 			"4300",
 			"1080 x 2400, 6.5 inches",
-			"64MP + 8MP + 2MP + 2MP, 16MP",
-			R.drawable.rmx2001
+			"64MP + 8MP + 2MP + 2MP, 16MP"
 		));
 		// Raphael
 		data.add(new AboutPhoneData(24,
@@ -243,8 +221,7 @@ public final class PhoneData {
 			"Snapdragon 855 (7 nm)",
 			"4000",
 			"1080 x 2340, 6.39 inches",
-			"48MP + 8MP + 13MP, 20MP",
-			R.drawable.raphael
+			"48MP + 8MP + 13MP, 20MP"
 		));
 		// Raphaelin
 		data.add(new AboutPhoneData(25,
@@ -253,8 +230,7 @@ public final class PhoneData {
 			"Snapdragon 855 (7 nm)",
 			"4000",
 			"1080 x 2340, 6.39 inches",
-			"48MP + 8MP + 13MP, 20MP",
-			R.drawable.raphael
+			"48MP + 8MP + 13MP, 20MP"
 		));
 		//X2
 		data.add(new AboutPhoneData(26,
@@ -263,8 +239,7 @@ public final class PhoneData {
 			"Snapdragon 730G",
 			"4000",
 			"1080 x 2340, 6.4 inches",
-			"64MP + 8MP + 2MP + 2MP",
-			R.drawable.X2
+			"64MP + 8MP + 2MP + 2MP"
 		));
 
 		//X2
@@ -274,8 +249,7 @@ public final class PhoneData {
 			"Snapdragon 730G",
 			"4000",
 			"1080 x 2340, 6.4 inches",
-			"64MP + 8MP + 2MP + 2MP",
-			R.drawable.X2
+			"64MP + 8MP + 2MP + 2MP"
                 ));
 		//X2
 		data.add(new AboutPhoneData(28,
@@ -284,8 +258,7 @@ public final class PhoneData {
 			"Snapdragon 730G",
 			"4000",
 			"1080 x 2340, 6.4 inches",
-			"64MP + 8MP + 2MP + 2MP",
-			R.drawable.X2
+			"64MP + 8MP + 2MP + 2MP"
 		));
 	        //wayne
         	data.add(new AboutPhoneData(29,
@@ -294,8 +267,7 @@ public final class PhoneData {
         	        "Snapdragon 660",
                 	"3000",
 	                "1080 x 2160, 5.99 inches",
-        	        "20MP + 12MP, 20MP",
-                	R.drawable.wayne
+        	        "20MP + 12MP, 20MP"
 	        ));
 		//jasmine_sprout
 		  data.add(new AboutPhoneData(30,
@@ -304,8 +276,7 @@ public final class PhoneData {
 	                "SDM 660",
         	        "3000",
                 	"1080 x 2160, 5.99 inches",
-	                "20MP + 12MP, 20MP",
-        	        R.drawable.whyred
+	                "20MP + 12MP, 20MP"
 		));
 
 	        //Payton
@@ -315,8 +286,7 @@ public final class PhoneData {
         	        "Snapgradon 630",
                 	"3000",
 	                "1080 x 1920, 5.2 inches",
-        	        "12MP + 8MP",
-                	R.drawable.payton
+        	        "12MP + 8MP"
 	        ));
                 //Z01R
                 data.add(new AboutPhoneData(32,
@@ -325,8 +295,7 @@ public final class PhoneData {
                         "Snapdragon 845",
                         "3300",
                         "1080 x 2246, 6.2 inches",
-                        "12MP + 8MP, 8MP",
-                        R.drawable.Z01R
+                        "12MP + 8MP, 8MP"
                ));
 		//le_x2
         	data.add(new AboutPhoneData(33,
@@ -335,8 +304,7 @@ public final class PhoneData {
         	        "Snapdragon 820",
 		        "3200",
                 	"1440 x 2560, 5.7 inches",
-        	        "21MP + 8MP",
-	                R.drawable.le_x2
+        	        "21MP + 8MP"
                ));
 	        //land
 	        data.add(new AboutPhoneData(34,
@@ -345,8 +313,7 @@ public final class PhoneData {
         	        "Snapgradon 430",
                 	"4000",
 	                "720 x 1280, 5.0 inches",
-        	        "13MP",
-                	R.drawable.land
+        	        "13MP"
 	        ));
 		//grus
 	        data.add(new AboutPhoneData(35,
@@ -355,8 +322,7 @@ public final class PhoneData {
         	        "Snapgradon 710",
                 	"3070",
 	                "1080 x 2340, 5.97 inches",
-        	        "48 MP + 13 MP + 8 MP",
-                	R.drawable.grus
+        	        "48 MP + 13 MP + 8 MP"
 	        ));
                 //deen
 	        data.add(new AboutPhoneData(36,
@@ -365,8 +331,7 @@ public final class PhoneData {
         	        "Snapgradon 625",
                 	"3000",
 	                "720 x 1520, 5.90 inches",
-        	        "13MP + 2MP, 8MP",
-                	R.drawable.deen
+        	        "13MP + 2MP, 8MP"
 	        ));
                 //sweet
                 data.add(new AboutPhoneData(37,
@@ -375,8 +340,7 @@ public final class PhoneData {
 			"Snapdragon 732G",
 			"5020Mah",
 			"1080x2400, 6.67 inches",
-			"108MP + 8MP + 5MP + 2MP, 16MP",
-                        R.drawable.sweet
+			"108MP + 8MP + 5MP + 2MP, 16MP"
 	        ));
                //surya
 		data.add(new AboutPhoneData(38,
@@ -385,8 +349,7 @@ public final class PhoneData {
 			"Snapdragon 732G",
 			"5160",
 			"2400 x 1080, 6.67 inches",
-			"64MP + 13MP + 2MP + 2MP",
-			R.drawable.surya
+			"64MP + 13MP + 2MP + 2MP"
 		));
                 //karna
                 data.add(new AboutPhoneData(39,
@@ -395,8 +358,7 @@ public final class PhoneData {
                         "Snapdragon 732G",
                         "6000",
                         "2400 x 1080, 6.67 inches",
-                        "64MP + 13MP + 2MP + 2MP",
-                        R.drawable.surya
+                        "64MP + 13MP + 2MP + 2MP"
                 ));
               //ysl
 		data.add(new AboutPhoneData(40,
@@ -405,8 +367,7 @@ public final class PhoneData {
 			"Snapdragon 625",
 			"3080",
 			"1440 x 720, 5.99 inches",
-			"12MP + 5MP, 16MP",
-			R.drawable.ysl
+			"12MP + 5MP, 16MP"
 		));
 		//GSIs
 		data.add(new AboutPhoneData(41,
@@ -415,8 +376,7 @@ public final class PhoneData {
                         "Sexynos 6900",
                         "4000",
                         "1080x2400, 6.47' inches",
-                        "48+12+5+2MP",
-                        R.drawable.phhgsi
+                        "48+12+5+2MP"
                 ));
 		data.add(new AboutPhoneData(42,
                         "phhgsi_arm64_a",
@@ -424,8 +384,7 @@ public final class PhoneData {
                         "Sexynos 6900",
                         "4000",
                         "1080x2400, 6.47' inches",
-                        "48+12+5+2MP",
-                        R.drawable.phhgsi
+                        "48+12+5+2MP"
                 ));
                data.add(new AboutPhoneData(43,
                         "phhgsi_a64_ab",
@@ -433,8 +392,7 @@ public final class PhoneData {
                         "Snappy 999+",
                         "3200",
                         "1080x1920, 5.5' inches",
-                        "12MP",
-                        R.drawable.phhgsiarm
+                        "12MP"
                 ));
                data.add(new AboutPhoneData(44,
                         "phhgsi_a64_a",
@@ -442,8 +400,7 @@ public final class PhoneData {
                         "Snappy 999+",
                         "3200",
                         "1080x1920, 5.5' inches",
-                        "12MP",
-                        R.drawable.phhgsiarm
+                        "12MP"
                 )); //EndGSIs
 		//whyred
                 data.add(new AboutPhoneData(45,
@@ -452,8 +409,7 @@ public final class PhoneData {
                         "Snapdragon 750G",
                         "4820",
                         "1080 x 2400, 6.67 inchles",
-                        "64 MP + 16 MP + 8 MP + 2 MP",
-                        R.drawable.whyred
+                        "64 MP + 16 MP + 8 MP + 2 MP"
                 ));
                 data.add(new AboutPhoneData(46,
                         "gauguininpro",
@@ -461,8 +417,7 @@ public final class PhoneData {
                         "Snapdragon 750G",
                         "4820",
                         "1080 x 2400, 6.67 inchles",
-                        "108 MP + 16 MP + 8 MP + 2 MP",
-                        R.drawable.whyred
+                        "108 MP + 16 MP + 8 MP + 2 MP"
                 ));
                 data.add(new AboutPhoneData(47,
                         "gauguinpro",
@@ -470,8 +425,7 @@ public final class PhoneData {
                         "Snapdragon 750G",
                         "4820",
                         "1080 x 2400, 6.67 inchles",
-                        "108 MP + 16 MP + 8 MP + 2 MP",
-                        R.drawable.whyred
+                        "108 MP + 16 MP + 8 MP + 2 MP"
                 ));
 		//sweetin
 		data.add(new AboutPhoneData(48,
@@ -480,8 +434,7 @@ public final class PhoneData {
 			"Snapdragon 732G",
 			"5020Mah",
 			"1080x2400, 6.67 inches",
-			"64MP + 8MP + 5MP + 2MP, 16MP",
-                        R.drawable.sweet
+			"64MP + 8MP + 5MP + 2MP, 16MP"
 		));
 		//sweetin
 		data.add(new AboutPhoneData(49,
@@ -490,8 +443,7 @@ public final class PhoneData {
 			"Snapdragon 732G",
 			"5020Mah",
 			"1080x2400, 6.67 inches",
-			"108MP + 8MP + 5MP + 2MP, 16MP",
-                        R.drawable.sweet
+			"108MP + 8MP + 5MP + 2MP, 16MP"
 		));
                 //dumpling
                 data.add(new AboutPhoneData(50,
@@ -500,8 +452,7 @@ public final class PhoneData {
 			"Snapdragon 835",
 			"3300",
 			"1080 x 2160, 6.01 inches",
-			"R: 16 MP + 20MP, F: 16MP",
-			R.drawable.dumpling
+			"R: 16 MP + 20MP, F: 16MP"
                 ));
 		//sakura
 		data.add(new AboutPhoneData(51,
@@ -510,8 +461,7 @@ public final class PhoneData {
 			"Snapdragon 625",
 			"4000",
 			"1080 x 2280, 5.84 inches",
-			"12MP + 5MP, 5MP",
-			R.drawable.sakura
+			"12MP + 5MP, 5MP"
 		));
 		//tucana
 	        data.add(new AboutPhoneData(52,
@@ -520,8 +470,7 @@ public final class PhoneData {
 			"Snapdragon 730G",
 		        "5260",
 		        "1080 x 2340, 6.47 inches",
-		        "108MP+12MP+8MP+20MP+2MP, 32MP",
-		        R.drawable.tucana
+		        "108MP+12MP+8MP+20MP+2MP, 32MP"
 	       ));
                //RMX1851
                data.add(new AboutPhoneData(53,
@@ -530,8 +479,7 @@ public final class PhoneData {
 			"Snapdragon 710",
 			"4045",
 			"1080 x 2340, 6.3 inches",
-			"16MP + 5MP, 25MP",
-                        R.drawable.RMX1851
+			"16MP + 5MP, 25MP"
                ));
 
 

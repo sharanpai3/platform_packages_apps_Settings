@@ -111,7 +111,8 @@
                 app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
+        <ImageView
+            android:src="@drawable/ic_default_settings_about"
             android:id="@+id/device_about"
             android:layout_width="0dp"
             android:layout_height="160dp"
