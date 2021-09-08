@@ -16,8 +16,7 @@ public final class PhoneData {
 			"Snapdragon 625",
 			"4100",
 			"1920 x 1080, 5.5 inches",
-			"13 MP + 5MP",
-			R.drawable.rmx1921
+			"13 MP + 5MP"
 		));
 
 		//whyred
@@ -446,7 +445,7 @@ public final class PhoneData {
                         "12MP",
                         R.drawable.phhgsiarm
                 )); //EndGSIs
-		//gauguin
+		//whyred
                 data.add(new AboutPhoneData(45,
                         "gauguin",
                         "2 x 2.2 GHz, 6 x 1.8 GHz",
@@ -454,7 +453,7 @@ public final class PhoneData {
                         "4820",
                         "1080 x 2400, 6.67 inchles",
                         "64 MP + 16 MP + 8 MP + 2 MP",
-                        R.drawable.gauguin
+                        R.drawable.whyred
                 ));
                 data.add(new AboutPhoneData(46,
                         "gauguininpro",
@@ -463,7 +462,7 @@ public final class PhoneData {
                         "4820",
                         "1080 x 2400, 6.67 inchles",
                         "108 MP + 16 MP + 8 MP + 2 MP",
-                        R.drawable.gauguin
+                        R.drawable.whyred
                 ));
                 data.add(new AboutPhoneData(47,
                         "gauguinpro",
@@ -472,7 +471,7 @@ public final class PhoneData {
                         "4820",
                         "1080 x 2400, 6.67 inchles",
                         "108 MP + 16 MP + 8 MP + 2 MP",
-                        R.drawable.gauguin
+                        R.drawable.whyred
                 ));
 		//sweetin
 		data.add(new AboutPhoneData(48,

@@ -46,9 +46,6 @@ import android.view.animation.LinearInterpolator;
 import android.widget.EditText;
 
 import android.widget.LinearLayout;
-import com.android.settings.Sequent;
-import com.android.settings.Direction;
-import com.android.settings.CustomAnimation;
 
 import android.view.ViewGroup;
 import androidx.annotation.VisibleForTesting;

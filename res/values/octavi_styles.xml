@@ -55,4 +55,8 @@
     <style name="ToolbarText.Expanded" parent="ToolbarText.Collapsed">
         <item name="android:textSize">34sp</item>
     </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">28sp</item>
+    </style>
 </resources>
