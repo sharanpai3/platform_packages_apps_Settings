@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2018 The Android Open Source Project
      Copyright (C) 2019 ExtendedUI
+     Copyright (C) 2020 OctaviOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,26 +17,29 @@
      limitations under the License.
 -->
 
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settings_homepage_container"
-    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:animateLayoutChanges="true"
+    android:transitionGroup="true"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <androidx.core.widget.NestedScrollView
 	android:background="?android:attr/colorPrimary"
         android:id="@+id/main_content_scrollable_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="238dp"
-        app:layout_behavior="com.android.settings.widget.FloatingAppBarScrollingViewBehavior">
+        android:layout_marginBottom="4dp"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:id="@+id/homepage_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+	    android:paddingBottom="16dp"
             android:orientation="vertical">
 
             <!--FrameLayout
@@ -49,17 +53,68 @@
                 android:id="@+id/main_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                android:background="?android:attr/windowBackground"/>
-
+                android:animateLayoutChanges="true" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
+
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarRoot"
+        app:elevation="0dp"
         android:layout_width="match_parent"
-        android:touchscreenBlocksFocus="false"
-        android:keyboardNavigationCluster="false"
-        android:layout_height="wrap_content">
-        <include layout="@layout/homepage_spacer"/>
+        android:background="?android:attr/colorPrimary"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="324dp"
+            android:minHeight="?android:attr/actionBarSize"
+            app:contentScrim="?android:attr/colorPrimary"
+            app:statusBarScrim="?android:attr/colorPrimary"
+            app:collapsedTitleGravity="start"
+            app:expandedTitleGravity="center"
+            app:expandedTitleTextAppearance="@style/ExpandedAppBar"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+            <TextView
+                android:id="@+id/random_settings"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:singleLine="true" />
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize" />
+
+            <LinearLayout
+                android:id="@+id/common_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+	        android:layout_marginBottom="10dp"
+		android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <Toolbar
+                    android:id="@+id/search_action_bar"
+                    android:layout_width="42dp"
+                    android:navigationIcon="@drawable/ic_homepage_search"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"/>
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/account_avatar_mirror"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
