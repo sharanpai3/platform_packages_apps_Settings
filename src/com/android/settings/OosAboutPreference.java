@@ -1,5 +1,6 @@
 package com.android.settings;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.SystemProperties;
 import com.android.settingslib.DeviceInfoUtils;
@@ -15,6 +16,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.LinearInterpolator;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.android.settings.PhoneData;
 
@@ -146,6 +148,24 @@ public class OosAboutPreference extends Preference implements View.OnTouchListen
 
         leftMini.setOnTouchListener(this);
         rightMini.setOnTouchListener(this);
+
+	 final Intent intent = new Intent(Intent.ACTION_MAIN)
+                    .setClassName(
+                            "android", com.android.internal.app.PlatLogoActivity.class.getName());
+
+	ImageView androidversion = root.findViewById(R.id.android_version);
+
+	androidversion.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+            try {
+                context.startActivity(intent);
+                return true;
+            } catch (Exception ignored) {
+            }
+                return false;
+            }
+        });
 
         logoFading(octaviLogo);
     }
