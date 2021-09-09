@@ -103,11 +103,12 @@
         settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
 
     <!-- Increasing ring -->
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="increasing_ring"
         android:title="@string/increasing_ring_volume_option_title"
         android:defaultValue="false"
         android:order="-137"
+        settings:iconSpaceReserved="false"
         settings:controller="com.android.settings.notification.IncreasingRingPreferenceController" />
 
     <!-- Increasing ring volume -->
@@ -116,6 +117,7 @@
         android:icon="@drawable/ring_notif_increasing"
         android:dependency="increasing_ring"
         android:order="-136"
+        settings:iconSpaceReserved="false"
         settings:controller="com.android.settings.notification.IncreasingRingVolumePreferenceController" />
 
     <!-- Volume Steps -->

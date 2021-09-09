@@ -119,6 +119,7 @@ public class OosAboutPreference extends BasePreferenceController implements View
         final String[] texts = {
                 data.get(index).getDisplay(), data.get(index).getCpu(),
                 data.get(index).getBattery(), data.get(index).getSoc(),
+                data.get(index).getCamera(),
         };
 
         for (int i = 0; i < var.length; i++) {

@@ -57,6 +57,7 @@
     </style>
 
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:layout_marginBottom">20dp</item>
     </style>
 </resources>

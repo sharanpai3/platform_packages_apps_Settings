@@ -40,8 +40,6 @@
         android:layout_height="match_parent"
 	android:layout_weight="1"
         android:layout_marginEnd="8dp"
-	android:layout_marginTop="16dp"
-	android:layout_marginBottom="26dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"> 
 
@@ -51,6 +49,7 @@
             android:layout_width="wrap_content" 
             android:layout_height="wrap_content" 
             android:singleLine="true" 
+            android:layout_marginTop="26dp"
             android:layout_marginStart="30dp" 
             android:textSize="130px"
             android:textColor="?android:attr/textColorPrimary"
@@ -76,9 +75,9 @@
 
         <com.android.settings.fuelgauge.WaveLoadingView
             android:id="@+id/myWave"
-            android:layout_width="59dp"
+            android:layout_width="79dp"
             android:background="@drawable/rect"
-            android:layout_height="107dp"
+            android:layout_height="137dp"
             android:layout_marginEnd="28dp"
 	    android:layout_marginTop="26dp"
 	    android:layout_marginBottom="26dp"
