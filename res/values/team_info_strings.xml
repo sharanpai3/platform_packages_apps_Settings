@@ -24,33 +24,19 @@
     <string name="dev2_description">Lead Developer, UI/UX Developer</string>
     <string name="dev_3">Satyam Sharma</string>
     <string name="dev3_description">Lead Developer, UI/UX Developer</string>
-    <string name="dev_4">Sukeerat</string>
-    <string name="dev4_description">Core Developer, Infrastructure Manager</string>
     <string name="dev_5">Overclockboi</string>
     <string name="dev5_description">Graphic Designer, Website Developer</string>
     <string name="dev_6">Billou &amp; Audrey</string>
     <string name="dev6_description">Project Moderator</string>
 
-    <string name="device_alioth">Sukeerat Goindi</string>
+    <string name="device_alioth">TonyJoaca</string>
     <string name="device_alioth_description">Xiaomi Poco F3 / Xiaomi Mi 11X / Redmi K40 \nAlioth</string>
-
-    <string name="device_fajita">Susanoo</string>
-    <string name="device_fajita_description">OnePlus 6T\nFajita</string>
 
     <string name="device_grus">RDS_07</string>
     <string name="device_grus_description">Xiaomi Mi 9 SE\nGrus</string>
 	
-    <string name="device_miatoll">itsXRP</string>
-    <string name="device_miatoll_description">MIATOLL</string>
-	
     <string name="device_mido">Sagar Rokade</string>
     <string name="device_mido_description">Redmi Note 4\nMido</string>
-
-    <string name="device_oneplus3">Royal</string>
-    <string name="device_oneplus3_description">Oneplus 3/t \noneplus3</string>
-
-    <string name="device_beryllium">Rucio Thomas</string>
-    <string name="device_beryllium_description">Poco F1\nBeryllium</string>
 
     <string name="device_phoenix">Redcliff</string>
     <string name="device_phoenix_description">Poco X2\nPhoenix</string>
@@ -66,9 +52,6 @@
 	
     <string name="device_surya">Tushar Bharti</string>
     <string name="device_surya_description">Poco X3\nSurya/Karna</string>
-	
-    <string name="device_tissot">Reharsh</string>
-    <string name="device_tissot_description">Mi A1</string>
 	
     <string name="device_dipper">TonyJoaca</string>
     <string name="device_dipper_description">Mi 8</string>
@@ -97,14 +80,8 @@
     <string name="device_Z01R">Ayan</string>
     <string name="device_Z01R_description">Asus 5Z\nZ01R</string>
 
-    <string name="device_excalibur">mrjarvis698</string>
-    <string name="device_excalibur_description">Xiaomi Redmi Note 9 PRO MAX\nExcalibur</string>
-
     <string name="device_gauguin">Priyanshu Gupta</string>
     <string name="device_gauguin_description">Redmi Note 9 Pro 5G, Mi 10i &amp; Mi 10T Lite\nGauguin</string>
-
-    <string name="device_sanders">Mayur Varde</string>
-    <string name="device_sanders_description">Moto G5S Plus\nsanders</string>
 
     <string name="device_X00TD">Paras Dhiman</string>
     <string name="device_X00TD_description">Asus ZenFone Max Pro M1\nsanders</string>
@@ -112,7 +89,7 @@
     <string name="device_sweet">Pratyaksh Bharadwaj</string>
     <string name="device_sweet_description">Redmi Note 10 Pro/Max\nsweet</string>
 
-    <string name="device_RMX1851">TheTablaster</string>
+    <string name="device_RMX1851">Nikhil</string>
     <string name="device_RMX1851_description">RMX1851</string>
 
     <string name="device_GSI">Yillié</string>
@@ -130,6 +107,9 @@
     <string name="device_daisy">Szymon</string>
     <string name="device_daisy_description">Xiaomi Mi A2 Lite\ndaisy</string>
 
-    <string name="device_lmi">Soumyo</string>
-    <string name="device_lmi_description">Poco F2 Pro\lmi</string>
+    <string name="device_lemonkebab">TheTablaster</string>
+    <string name="device_lemonkebab_description">RMX1851</string>
+
+    <string name="device_rmx2151">AlphaXyph</string>
+    <string name="device_rmx2151_description">RMX2151</string>
 </resources>

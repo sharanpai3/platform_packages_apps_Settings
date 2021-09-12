@@ -60,15 +60,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </Preference>
 
         <Preference
-            android:title="@string/dev_4"
-            android:summary="@string/dev4_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/IronGFly" />
-        </Preference>
-
-        <Preference
             android:title="@string/dev_5"
             android:summary="@string/dev5_description"
             android:icon="@drawable/ic_devs_pc" >
@@ -109,46 +100,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:data="https://t.me/Ken_kaneki_69" />
         </Preference>
  
-	<Preference
-            android:title="@string/device_sanders"
-            android:summary="@string/device_sanders_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/marshmello_61" />
-        </Preference>
-
-        <Preference
-            android:title="@string/device_oneplus3"
-            android:summary="@string/device_oneplus3_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Royals5464" />
-        </Preference>
-
-        <Preference
-            android:title="@string/device_fajita"
-            android:summary="@string/device_fajita_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Susan0o0" />
-        </Preference>
-
-        <Preference
-            android:title="@string/device_beryllium"
-            android:summary="@string/device_beryllium_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/RucioTozzy" />
-        </Preference>
-
-	<Preference
-            android:title="@string/device_lmi"
-            android:summary="@string/device_lmi_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/soumyo19" />
-        </Preference>
-
         <Preference
             android:title="@string/device_phoenix"
             android:summary="@string/device_phoenix_description">
@@ -167,14 +118,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </Preference>
 
 	<Preference
-            android:title="@string/device_CPH1859"
-            android:summary="@string/device_CPH1859_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/I_am_pronoob" />
-        </Preference>
-
-	<Preference
             android:title="@string/device_RMX1831"
             android:summary="@string/device_RMX1831_description">
         <intent
@@ -187,7 +130,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:summary="@string/device_RMX1851_description">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/V3NK4135H" />
+            android:data="https://t.me/Nikhil7001" />
         </Preference>
 
         <Preference
@@ -263,22 +206,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </Preference>
 
         <Preference
-	    android:title="@string/device_miatoll"
-            android:summary="@string/device_miatoll_description">  
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/itsXRP" />
-        </Preference>
-
-        <Preference
-            android:title="@string/device_excalibur"
-            android:summary="@string/device_excalibur_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/mrjarvis698" />
-        </Preference>
-
-        <Preference
             android:title="@string/device_gauguin"
             android:summary="@string/device_gauguin_description">
         <intent
@@ -300,14 +227,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/lostark13" />
-        </Preference>
-
-        <Preference
-            android:title="@string/device_tissot"
-            android:summary="@string/device_tissot_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Reharsh" />
         </Preference>
 
 	<Preference
@@ -347,7 +266,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:summary="@string/device_alioth_description">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/irongfly" />
+            android:data="https://t.me/TonyJoaca" />
         </Preference>
 
 	<Preference
@@ -356,6 +275,22 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/yilliee" />
+        </Preference>
+
+        <Preference
+            android:title="@string/device_lemonkebab"
+            android:summary="@string/device_lemonkebab_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/V3NK4135H" />
+        </Preference>
+
+	<Preference
+            android:title="@string/device_rmx2151"
+            android:summary="@string/device_rmx2151_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/alphaxyph" />
         </Preference>
 </PreferenceCategory>
 
