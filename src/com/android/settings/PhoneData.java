@@ -283,7 +283,15 @@ public final class PhoneData {
 			"1080 x 2340, 6.3 inches",
 			"16MP + 5MP, 25MP"
                ));
-
+               //RMX2151
+	       data.add(new AboutPhoneData(32,
+			"rmx2151",
+			"6 x 2.0Ghz, 2 x 2.05GHz",
+			"Mediatek Helio G95",
+			"5000",
+			"1080x2340 pixels, 6.0 inches",
+			"64MP + 8MP + 2MP + 2MP"
+	       ));
 
 }
     public static List<AboutPhoneData> getData() {
