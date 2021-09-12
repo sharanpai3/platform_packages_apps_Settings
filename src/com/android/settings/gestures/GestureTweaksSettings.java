@@ -37,9 +37,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settingslib.search.Indexable;
 
+import com.octavi.lab.preferences.SystemSettingSwitchPreference;
 import com.octavi.support.preferences.CustomSeekBarPreference;
 import com.octavi.support.preferences.SystemSettingListPreference;
-import com.octavi.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;

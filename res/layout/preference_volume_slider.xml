@@ -83,6 +83,7 @@
                 android:paddingStart="12dp"
                 android:progressDrawable="@drawable/octavi_progress"
 	        android:thumb="@null"
+                android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"/>
 
