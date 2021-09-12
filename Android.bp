@@ -28,7 +28,9 @@ android_library {
     ],
 
     srcs: ["src/**/*.java",
+	   "src/**/*.kt",
            "OctaviLab/src/**/*.java",
+	   
     ],
 
     aaptflags: ["--extra-packages com.octavi.lab"],
