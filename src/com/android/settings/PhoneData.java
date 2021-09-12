@@ -293,7 +293,7 @@ public final class PhoneData {
 			"64MP + 8MP + 2MP + 2MP"
 	       ));
                //RMX1971
-               data.add(new AboutPhoneData(54,
+               data.add(new AboutPhoneData(33,
                         "RMX1971",
                         "2 x 2.3 GHz, 6 x 1.7 GHz",
                         "Snapdragon 712",
@@ -301,6 +301,33 @@ public final class PhoneData {
                         "1080 x 2340, 6.3 inches",
                         "48MP + 8MP + 2MP + 2MP"
                ));
+               //alioth
+               data.add(new AboutPhoneData(34,
+                        "alioth",
+                        "1 x 3.2 GHz, 3 x 2.42 GHz, 4 x 1.80 GHz",
+                        "Snapdragon 870",
+                        "4520",
+                        "1080 x 2400, 6.67 inches",
+                        "48MP + 8MP + 5MP, 20MP"
+               ));
+               data.add(new AboutPhoneData(35,
+                        "aliothin",
+                        "1 x 3.2 GHz, 3 x 2.42 GHz, 4 x 1.80 GHz",
+                        "Snapdragon 870",
+                        "4520",
+                        "1080 x 2400, 6.67 inches",
+                        "48MP + 8MP + 5MP, 20MP"
+               ));
+               //dipper
+               data.add(new AboutPhoneData(36,
+                        "dipper",
+                        "4 x 2.8 GHz, 4 x 1.8 GHz",
+                        "Snapdragon 845",
+                        "3400",
+                        "1080 x 2248, 6.21 inches",
+                        "12MP + 12MP, 20MP"
+               ));
+
 }
     public static List<AboutPhoneData> getData() {
 	return data;
