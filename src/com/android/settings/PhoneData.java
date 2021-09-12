@@ -292,7 +292,15 @@ public final class PhoneData {
 			"1080x2340 pixels, 6.0 inches",
 			"64MP + 8MP + 2MP + 2MP"
 	       ));
-
+               //RMX1971
+               data.add(new AboutPhoneData(54,
+                        "RMX1971",
+                        "2 x 2.3 GHz, 6 x 1.7 GHz",
+                        "Snapdragon 712",
+                        "4035",
+                        "1080 x 2340, 6.3 inches",
+                        "48MP + 8MP + 2MP + 2MP"
+               ));
 }
     public static List<AboutPhoneData> getData() {
 	return data;

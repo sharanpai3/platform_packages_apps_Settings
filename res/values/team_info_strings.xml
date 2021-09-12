@@ -112,4 +112,7 @@
 
     <string name="device_rmx2151">AlphaXyph</string>
     <string name="device_rmx2151_description">RMX2151</string>
+
+    <string name="device_RMX1971">goshawk22</string>
+    <string name="device_RMX1971_description">RMX1971</string>
 </resources>

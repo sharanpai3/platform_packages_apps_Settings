@@ -292,6 +292,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/alphaxyph" />
         </Preference>
+
+	<Preference
+            android:title="@string/device_RMX1971"
+            android:summary="@string/device_RMX1971_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/goshawk22" />
+        </Preference>
 </PreferenceCategory>
 
 </PreferenceScreen>
