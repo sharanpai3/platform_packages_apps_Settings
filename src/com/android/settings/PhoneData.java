@@ -327,6 +327,15 @@ public final class PhoneData {
                         "1080 x 2248, 6.21 inches",
                         "12MP + 12MP, 20MP"
                ));
+               //RMX2170 (Realme 7 Pro)
+               data.add(new AboutPhoneData(37,
+                       "RMX2170",
+                       "2 x 2.3 GHz, 6 x 1.8 GHz",
+                       "Snapdragon 720G",
+                       "4500",
+                       "1080 x 2400, 6.44 inches",
+                       "64MP + 16MP + 2MP + 2MP, 32MP"
+               ));
 
 }
     public static List<AboutPhoneData> getData() {

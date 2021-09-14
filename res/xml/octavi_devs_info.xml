@@ -100,6 +100,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:data="https://t.me/Ken_kaneki_69" />
         </Preference>
  
+	<Preference
+            android:title="@string/device_RMX2170"
+            android:summary="@string/device_RMX2170_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/marshmello_61" />
+        </Preference>
+
         <Preference
             android:title="@string/device_phoenix"
             android:summary="@string/device_phoenix_description">

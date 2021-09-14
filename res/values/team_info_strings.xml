@@ -115,4 +115,7 @@
 
     <string name="device_RMX1971">goshawk22</string>
     <string name="device_RMX1971_description">RMX1971</string>
+
+    <string name="device_RMX2170">Mayur Varde</string>
+    <string name="device_RMX2170_description">Realme 7 Pro\nRMX2170</string>
 </resources>
