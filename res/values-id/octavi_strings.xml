@@ -374,4 +374,14 @@ Malam: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="legacy_wfd_video_mode_720p_60fps">720p 60fps</string>
     <string name="legacy_wfd_video_mode_1080p_30fps">1080p 30fps</string>
     <string name="legacy_wfd_video_mode_1080p_60fps">1080p 60fps</string>
+    <!-- categories -->
+    <string name="display_screen_category">Layar</string>
+    <string name="display_customisation_title">Kustomisasi Tampilan</string>
+    <string name="display_wake_title">Opsi Bangun</string>
+    <string name="display_brightness_title">Opsi Kecerahan</string>
+    <string name="volume_adjustment_category_title">Penyesuaian Volume</string>
+    <string name="ringtone_category_title">Nada dering</string>
+    <string name="vibrations_category_title">Getaran dan Keheningan</string>
+    <string name="wifi_tether_client_list_title">Daftar klien</string>
+    <string name="wifi_tether_client_list_summary">Kelola klien yang terhubung ke hotspot</string>
 </resources>
