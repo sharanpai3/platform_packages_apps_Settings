@@ -95,12 +95,12 @@ public class SettingsHomepageActivity extends FragmentActivity {
         text.add("Change is good, but dollars are better");
         text.add("If you cannot convince them, confuse them");
         text.add("This sentence is a lie");
-        text.add("Two wrongs don't make a right, for ex. your parents");
+        text.add("Make everyday a little less ordinary");
         text.add("Stupidity is not a crime so you are free to go.");
         text.add("I'm not insulting you. I'm describing you");
         text.add("You're so fake, Barbie is jealous");
-        text.add("There's only one problem with your face, I can see it");
-	text.add("If I had a face like yours, I'd sue my parents");
+        text.add("Believe you can, and you are halfway there");
+	text.add("Whatever you are, be a good one");
     }
 
    CollapsingToolbarLayout collapsing_toolbar;
