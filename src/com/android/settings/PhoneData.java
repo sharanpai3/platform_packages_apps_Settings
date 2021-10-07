@@ -336,6 +336,24 @@ public final class PhoneData {
                        "1080 x 2400, 6.44 inches",
                        "64MP + 16MP + 2MP + 2MP, 32MP"
                ));
+	       //ginkgo
+	       data.add(new AboutPhoneData(38,
+			"ginkgo",
+			"4 x 2.0 GHz , 4 x 1.8 GHz",
+			"Snapdragon 665",
+			"4000",
+			"1080 x 2340, 6.3 inches",
+			"48MP + 8MP + 2MP + 2MP"
+		));
+		//willow
+		data.add(new AboutPhoneData(39,
+			"willow",
+			"4 x 2.0 GHz , 4 x 1.8 GHz",
+			"Snapdragon 665",
+			"4000",
+			"1080 x 2340, 6.3 inches",
+			"48MP + 8MP + 2MP + 2MP"
+		));
 
 }
     public static List<AboutPhoneData> getData() {
