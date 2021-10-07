@@ -57,7 +57,7 @@ public final class PhoneData {
 		//Phoenixin
 		data.add(new AboutPhoneData(6,
 			"phoenixin",
-			"6 x 2.21GHz, 2 x 1.80Ghz",
+			"2 x 2.21GHz, 6 x 1.80Ghz",
 			"Snapdragon 730G",
 			"4500",
 			"1080 x 2400, 6.67 inches",
