@@ -30,6 +30,7 @@
         android:key="category"
         android:icon="@drawable/ic_deviceinfo"
         android:order="-170"
+        android:selectable="false"
         android:title="@string/device_category_title"/>
 
     <Preference
