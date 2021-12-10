@@ -37,6 +37,12 @@
 
     </PreferenceCategory>
 
+    <com.octavi.support.preference.SystemSettingSwitchPreference
+        android:key="back_gesture_haptic"
+        android:title="@string/back_gesture_haptic_title"
+        android:summary="@string/back_gesture_haptic_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="back_sensitivity_category"
         android:persistent="false"
