@@ -132,6 +132,13 @@
             settings:iconSpaceReserved="false" 
             settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
 
+        <com.octavi.support.preference.SecureSettingSwitchPreference
+            android:key="show_combined_status_bar_signal_icons"
+            android:title="@string/combined_status_bar_signal_icons"
+            android:summary="@string/combined_status_bar_signal_icons_summary"
+            settings:controller="com.android.settings.display.CombinedSignalIconsPreferenceController"
+            android:defaultValue="false" />
+
         <Preference
             android:key="auto_rotate"
             android:title="@string/accelerometer_title"
