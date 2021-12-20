@@ -264,4 +264,5 @@
     <string name="userpref_summary">Personal Information about current user</string>
     <string name="user_title">User Info</string>
 
+    <string name="updater_summary">OTA Notifier for OctaviOS</string>
 </resources>

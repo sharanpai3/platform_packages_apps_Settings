@@ -57,12 +57,13 @@
     <Preference
         android:key="system_update_settings"
         android:title="@string/system_update_settings_list_item_title"
-        android:summary="@string/summary_placeholder"
+        android:summary="@string/updater_summary"
         android:icon="@drawable/ic_system_update"
-        android:order="-58"
-        settings:keywords="@string/keywords_system_update_settings"
-        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
-        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"/>
+        android:order="-58">
+    <intent
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="apps.octavi.ota"
+        android:targetClass="apps.octavi.ota.MainActivity" />   
     </Preference>
 
     <Preference
