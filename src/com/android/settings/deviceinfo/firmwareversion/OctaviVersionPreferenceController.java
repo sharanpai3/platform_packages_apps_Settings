@@ -73,7 +73,7 @@ public class OctaviVersionPreferenceController extends BasePreferenceController 
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_OCTAVI_VERSION_PROP,
+        return SystemProperties.get("v"+KEY_OCTAVI_VERSION_PROP,
                 mContext.getString(R.string.unknown));
     }
 
