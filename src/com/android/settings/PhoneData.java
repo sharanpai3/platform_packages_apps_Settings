@@ -190,25 +190,34 @@ public final class PhoneData {
         ));
         // Realme 6
         data.add(new AboutPhoneData(21,
-                "RMX2001",
+                "RMX2001L1",
                 "6 x 2.0 GHz + 2 x 2.05 GHz",
                 "Mediatek G90T (12 nm)",
                 "4300",
                 "1080 x 2400, 6.5 inches",
                 "64MP+8MP+2MP+2MP,16MP"
         ));
-        // Realme 6i (India)/6S
+        // Realme 6
         data.add(new AboutPhoneData(22,
-                "RMX2002",
+                "RMX2003L1",
                 "6 x 2.0 GHz + 2 x 2.05 GHz",
                 "Mediatek G90T (12 nm)",
                 "4300",
                 "1080 x 2400, 6.5 inches",
                 "48MP+8MP+2MP+2MP,16MP"
         ));
-        // Realme Narzo
+        // Realme 6
         data.add(new AboutPhoneData(23,
-                "RMX2003",
+                "RMX2005L1",
+                "6 x 2.0 GHz + 2 x 2.05 GHz",
+                "Mediatek G90T (12 nm)",
+                "4300",
+                "1080 x 2400, 6.5 inches",
+                "48MP+8MP+2MP+2MP,16MP"
+        ));
+        // Realme 6i (India)/6S/Narzo
+        data.add(new AboutPhoneData(24,
+                "RMX2002L1",
                 "6 x 2.0 GHz + 2 x 2.05 GHz",
                 "Mediatek G90T (12 nm)",
                 "4300",
@@ -216,8 +225,26 @@ public final class PhoneData {
                 "48MP+8MP+2MP+2MP,16MP"
         ));
         // Realme 7
-        data.add(new AboutPhoneData(24,
-                "RMX2151",
+        data.add(new AboutPhoneData(26,
+                "RMX2151L1",
+                "6 x 2.0 GHz + 2 x 2.05 GHz",
+                "Mediatek G95 (12 nm)",
+                "5000",
+                "1080 x 2400, 6.5 inches",
+                "64MP+8MP+2MP+2MP,16MP"
+        ));
+        // Realme 7
+        data.add(new AboutPhoneData(27,
+                "RMX2153L1",
+                "6 x 2.0 GHz + 2 x 2.05 GHz",
+                "Mediatek G95 (12 nm)",
+                "5000",
+                "1080 x 2400, 6.5 inches",
+                "64MP+8MP+2MP+2MP,16MP"
+        ));
+        // Realme 7
+        data.add(new AboutPhoneData(28,
+                "RMX2155L1",
                 "6 x 2.0 GHz + 2 x 2.05 GHz",
                 "Mediatek G95 (12 nm)",
                 "5000",
@@ -225,17 +252,27 @@ public final class PhoneData {
                 "64MP+8MP+2MP+2MP,16MP"
         ));
         // Realme Narzo 20 Pro
-        data.add(new AboutPhoneData(25,
-                "RMX2161",
+        data.add(new AboutPhoneData(29,
+                "RMX2161L1",
                 "6 x 2.0 GHz + 2 x 2.05 GHz",
                 "Mediatek G95 (12 nm)",
                 "4500",
                 "1080 x 2400, 6.5 inches",
                 "48MP+8MP+2MP+2MP,16MP"
         ));
+        // Realme Narzo 20 Pro
+        data.add(new AboutPhoneData(30,
+                "RMX2163L1",
+                "6 x 2.0 GHz + 2 x 2.05 GHz",
+                "Mediatek G95 (12 nm)",
+                "4500",
+                "1080 x 2400, 6.5 inches",
+                "48MP+8MP+2MP+2MP,16MP"
+        ));
+
         // Realme Narzo 30 4G
-        data.add(new AboutPhoneData(26,
-                "RMX2156",
+        data.add(new AboutPhoneData(31,
+                "RMX2156L1",
                 "6 x 2.0 GHz + 2 x 2.05 GHz",
                 "Mediatek G95 (12 nm)",
                 "5000",
@@ -243,7 +280,7 @@ public final class PhoneData {
                 "48MP+8MP+2MP+2MP,16MP"
         ));
         // merlin
-        data.add(new AboutPhoneData(27,
+        data.add(new AboutPhoneData(32,
                 "merlin",
                 "2 x 2.0Ghz, 6 x 1.8Ghz",
                 "Mediatek G85 (12 nm)",
@@ -252,7 +289,7 @@ public final class PhoneData {
                 "48MP+8MP+2MP+2MP, 13MP"
         ));
         // surya
-        data.add(new AboutPhoneData(28,
+        data.add(new AboutPhoneData(33,
                 "surya",
                 "2 x 2.3Ghz, 6 x 1.8Ghz",
                 "Snapdragon 732G (8 nm)",
@@ -261,7 +298,7 @@ public final class PhoneData {
                 "64MP+13MP+2MP+2MP, 20MP"
         ));
         // karna
-        data.add(new AboutPhoneData(29,
+        data.add(new AboutPhoneData(34,
                 "karna",
                 "2 x 2.3Ghz, 6 x 1.8Ghz",
                 "Snapdragon 732G (8 nm)",
@@ -270,7 +307,7 @@ public final class PhoneData {
                 "64MP+13MP+2MP+2MP, 20MP"
         ));
         // apollo
-        data.add(new AboutPhoneData(30,
+        data.add(new AboutPhoneData(35,
                 "apollo",
                 "1 x 2.84Ghz, 3 x 2.42Ghz, 4 x 1.8GHz",
                 "Snapdragon 865 (7 nm)",
@@ -279,7 +316,7 @@ public final class PhoneData {
                 "64MP+13MP+5MP, 20MP"
         ));
         // apollopro
-        data.add(new AboutPhoneData(31,
+        data.add(new AboutPhoneData(36,
                 "apollopro",
                 "1 x 2.84Ghz, 3 x 2.42Ghz, 4 x 1.8GHz",
                 "Snapdragon 865 (7 nm)",
@@ -288,7 +325,7 @@ public final class PhoneData {
                 "108MP+13MP+5MP, 20MP"
         ));
         // phoenixin
-        data.add(new AboutPhoneData(32,
+        data.add(new AboutPhoneData(37,
                 "phoenixin",
                 "2 x 2.2Ghz, 6 x 1.8Ghz",
                 "Snapdragon 730G (8 nm)",
@@ -297,7 +334,7 @@ public final class PhoneData {
                 "64MP+8MP+2MP+2MP, 20MP"
         ));
         // phoenix
-        data.add(new AboutPhoneData(33,
+        data.add(new AboutPhoneData(38,
                 "phoenix",
                 "2 x 2.2Ghz, 6 x 1.8Ghz",
                 "Snapdragon 730G (8 nm)",
@@ -306,7 +343,7 @@ public final class PhoneData {
                 "64MP+8MP+2MP+2MP, 20MP"
         ));
         //whyred
-        data.add(new AboutPhoneData(34,
+        data.add(new AboutPhoneData(39,
                 "whyred",
                 "8 x 1.8GHz",
                 "Snapdragon 636",
@@ -315,7 +352,7 @@ public final class PhoneData {
                 "12MP + 5MP + 20MP"
         ));
         //RMX1921
-        data.add(new AboutPhoneData(35,
+        data.add(new AboutPhoneData(40,
                 "rmx1921",
                 "8 x 2.30GHz",
                 "Snapdragon 712",
@@ -324,7 +361,7 @@ public final class PhoneData {
                 "64MP + 8MP + 2MP + 2MP"
         ));
 	//ysl
-	data.add(new AboutPhoneData(36,
+	data.add(new AboutPhoneData(41,
 		"ysl",
 		"8 x 2.0GHz",
 		"Snapdragon 625",
@@ -333,7 +370,7 @@ public final class PhoneData {
 		"12MP + 5MP, 16MP"
 	));
 	//RMX1971
-	data.add(new AboutPhoneData(37,
+	data.add(new AboutPhoneData(42,
 		"RMX1971",
 		"2 x 2.3Ghz, 6 x 1.7Ghz",
 		"Snapdragon 712",
@@ -342,7 +379,7 @@ public final class PhoneData {
 		"48MP + 8MP, 16MP"
 	));
         // Sunny
-        data.add(new AboutPhoneData(38,
+        data.add(new AboutPhoneData(43,
                 "sunny",
                 "2 x 2.28 GHz + 6 x 1.78 GHz",
                 "Snapdragon 678 (11 nm)",
