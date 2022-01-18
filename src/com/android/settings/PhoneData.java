@@ -306,7 +306,7 @@ public final class PhoneData {
                 "64MP+8MP+2MP+2MP, 20MP"
         ));
         //whyred
-        data.add(new AboutPhoneData(2,
+        data.add(new AboutPhoneData(34,
                 "whyred",
                 "8 x 1.8GHz",
                 "Snapdragon 636",
@@ -315,7 +315,7 @@ public final class PhoneData {
                 "12MP + 5MP + 20MP"
         ));
         //RMX1921
-        data.add(new AboutPhoneData(3,
+        data.add(new AboutPhoneData(35,
                 "rmx1921",
                 "8 x 2.30GHz",
                 "Snapdragon 712",
@@ -324,13 +324,22 @@ public final class PhoneData {
                 "64MP + 8MP + 2MP + 2MP"
         ));
 	//ysl
-	data.add(new AboutPhoneData(19,
+	data.add(new AboutPhoneData(36,
 		"ysl",
 		"8 x 2.0GHz",
 		"Snapdragon 625",
 		"3080",
 		"1440 x 720, 5.99 inches",
 		"12MP + 5MP, 16MP"
+	));
+	//RMX1971
+	data.add(new AboutPhoneData(37,
+		"RMX1971",
+		"2 x 2.3Ghz, 6 x 1.7Ghz",
+		"Snapdragon 712",
+		"4035",
+		"2340 x 1080, 6.3 inches",
+		"48MP + 8MP, 16MP"
 	));
 }
     public static List<AboutPhoneData> getData() {
