@@ -54,9 +54,9 @@ public final class PhoneData {
                 "1080 x 2340, 6.47 inches",
                 "108MP+12MP+8MP+20MP+2MP, 32MP"
         ));
-        // Mojito/Sunny
+        // Mojito
         data.add(new AboutPhoneData(6,
-                "mojito/sunny",
+                "mojito",
                 "2 x 2.28 GHz + 6 x 1.78 GHz",
                 "Snapdragon 678 (11 nm)",
                 "5000",
@@ -341,6 +341,15 @@ public final class PhoneData {
 		"2340 x 1080, 6.3 inches",
 		"48MP + 8MP, 16MP"
 	));
+        // Sunny
+        data.add(new AboutPhoneData(38,
+                "sunny",
+                "2 x 2.28 GHz + 6 x 1.78 GHz",
+                "Snapdragon 678 (11 nm)",
+                "5000",
+                "1080 x 2400, 6.43 inches",
+                "48MP + 8MP + 2MP + 2MP, 13MP"
+        ));
 }
     public static List<AboutPhoneData> getData() {
 	return data;
